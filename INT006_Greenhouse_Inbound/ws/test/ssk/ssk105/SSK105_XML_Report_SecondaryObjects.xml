@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	This simple document represents a RAAS report which returns the Employee_ID and an external ID.
+	The use case for this would be where we are receiving a document containing information which needs to be loaded into workday but only the external ID is available in
+	that document.  As a result we need to efficiently look up the employee ID from the external ID.  The Java map solution to this is to store the data in a HashMap
+	using the external ID as the key and the employee ID as the value.
+ -->
+<r:Report_Data xmlns:r="urn:report">
+	<r:Report_Entry>
+		<r:Employee_ID>21001</r:Employee_ID>
+		<r:Other_References>
+			<r:Other_Reference>
+				<r:ID r:type="WID">231b4975b2a2461d98e7b7b3c613964d</r:ID>
+				<r:ID r:type="Some_ID">10</r:ID>
+			</r:Other_Reference>
+			<r:Other_Reference>
+				<r:ID r:type="WID">234c31f7f86248a3a2ff93c3d6f7daf1</r:ID>
+				<r:ID r:type="Some_ID">11</r:ID>
+			</r:Other_Reference>
+		</r:Other_References>
+	</r:Report_Entry>
+	<r:Report_Entry>
+		<r:Employee_ID>21002</r:Employee_ID>
+		<r:Other_References>
+			<r:Other_Reference>
+				<r:ID r:type="WID">235a6f366da848fcab358f9c18bb49bf</r:ID>
+				<r:ID r:type="Some_ID">20</r:ID>
+			</r:Other_Reference>
+			<r:Other_Reference>
+				<r:ID r:type="WID">237cd8b53b7010d254376547d7950b09</r:ID>
+				<r:ID r:type="Some_ID">21</r:ID>
+			</r:Other_Reference>
+		</r:Other_References>
+	</r:Report_Entry>
+	<r:Report_Entry>
+		<r:Employee_ID>21003</r:Employee_ID>
+		<r:Other_References>
+			<r:Other_Reference>
+				<r:ID r:type="WID">267a9f39967f405ab504bb8216ef55fb</r:ID>
+				<r:ID r:type="Some_ID">30</r:ID>
+			</r:Other_Reference>
+			<r:Other_Reference>
+				<r:ID r:type="WID">26c439a5deed4a7dbab76709e0d2d2ca</r:ID>
+				<r:ID r:type="Some_ID">31</r:ID>
+			</r:Other_Reference>
+		</r:Other_References>
+	</r:Report_Entry>
+</r:Report_Data>

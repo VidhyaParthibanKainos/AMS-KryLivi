@@ -1,0 +1,28 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bsvc="urn:com.workday/bsvc">
+	<soapenv:Header>
+		<bsvc:Workday_Common_Header>
+			<bsvc:Include_Reference_Descriptors_In_Response>true</bsvc:Include_Reference_Descriptors_In_Response>
+		</bsvc:Workday_Common_Header>
+	</soapenv:Header>
+	<soapenv:Body>
+		<bsvc:Get_Event_Details_Request bsvc:version="v35.0">
+			<bsvc:Request_References>
+				<bsvc:Event_Reference><bsvc:ID bsvc:type="WID">c70f8c5b5c0d019352f2de8c02002900</bsvc:ID></bsvc:Event_Reference>
+				<bsvc:Event_Reference><bsvc:ID bsvc:type="WID">c70f8c5b5c0d019352f2de8c02002901</bsvc:ID></bsvc:Event_Reference>
+				<bsvc:Event_Reference><bsvc:ID bsvc:type="WID">c70f8c5b5c0d019352f2de8c02002902</bsvc:ID></bsvc:Event_Reference>
+				<bsvc:Event_Reference><bsvc:ID bsvc:type="WID">c70f8c5b5c0d019352f2de8c02002903</bsvc:ID></bsvc:Event_Reference>
+				<bsvc:Event_Reference><bsvc:ID bsvc:type="WID">c70f8c5b5c0d019352f2de8c02002904</bsvc:ID></bsvc:Event_Reference>
+				<bsvc:Event_Reference><bsvc:ID bsvc:type="WID">c70f8c5b5c0d019352f2de8c02002905</bsvc:ID></bsvc:Event_Reference>
+				<bsvc:Event_Reference><bsvc:ID bsvc:type="WID">c70f8c5b5c0d019352f2de8c02002906</bsvc:ID></bsvc:Event_Reference>
+				<bsvc:Event_Reference><bsvc:ID bsvc:type="WID">c70f8c5b5c0d019352f2de8c02002907</bsvc:ID></bsvc:Event_Reference>
+				<bsvc:Event_Reference><bsvc:ID bsvc:type="WID">c70f8c5b5c0d019352f2de8c02002908</bsvc:ID></bsvc:Event_Reference>
+				<bsvc:Event_Reference><bsvc:ID bsvc:type="WID">c70f8c5b5c0d019352f2de8c02002909</bsvc:ID></bsvc:Event_Reference>
+			</bsvc:Request_References>
+			<bsvc:Response_Filter>
+				<bsvc:As_Of_Effective_Date>1970-01-01-08:00</bsvc:As_Of_Effective_Date>
+ 				<bsvc:Page>1</bsvc:Page>
+				<bsvc:Count>2</bsvc:Count>
+			</bsvc:Response_Filter>
+		</bsvc:Get_Event_Details_Request>
+	</soapenv:Body>
+</soapenv:Envelope>

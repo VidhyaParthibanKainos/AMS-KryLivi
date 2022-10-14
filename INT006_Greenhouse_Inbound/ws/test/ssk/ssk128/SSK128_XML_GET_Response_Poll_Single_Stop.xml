@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages xmlns="http://www.workday.com/wd-queue/17" returned-count="4" total-count="4">
+    <message>
+        <index>1</index>
+        <uri>/ccx/wd-queue/INT-SSK-MQ/messages/1</uri>
+        <size>1183</size>
+        <uploaded>2020-09-05T21:27:05.000Z</uploaded>
+        <content-type>text/plain</content-type>
+    </message>
+    <message>
+        <index>2</index>
+        <uri>/ccx/wd-queue/INT-SSK-MQ/messages/2</uri>
+        <size>1184</size>
+        <uploaded>2020-09-05T21:27:05.000Z</uploaded>
+        <content-type>text/plain</content-type>
+    </message>
+    <message>
+        <index>3</index>
+        <uri>/ccx/wd-queue/INT-SSK-MQ/messages/3</uri>
+        <size>1185</size>
+        <uploaded>2020-09-05T21:27:05.000Z</uploaded>
+        <content-type>text/plain</content-type>
+    </message>
+    <message>
+        <index>4</index>
+        <uri>/ccx/wd-queue/INT-SSK-MQ/messages/4</uri>
+        <size>1186</size>
+        <uploaded>2020-09-05T21:27:05.000Z</uploaded>
+        <content-type>text/plain</content-type>
+    </message>
+</messages>

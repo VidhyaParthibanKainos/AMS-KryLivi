@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wd:Report_Entry xmlns:wd="urn:com.workday.report/CR_INT_Workers" xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+    <wd:Worker wd:Descriptor="Oliver Reynolds">
+        <wd:ID wd:type="WID">3895af7993ff4c509cbea2e1817172e0</wd:ID>
+        <wd:ID wd:type="Employee_ID">21003</wd:ID>
+    </wd:Worker>
+</wd:Report_Entry>

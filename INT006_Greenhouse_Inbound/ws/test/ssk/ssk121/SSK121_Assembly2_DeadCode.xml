@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<DeadCode xmlns:spring="http://www.springframework.org/schema/beans">
+    <LocalIn>PopulateJavaMap</LocalIn>
+    <LocalIn>Main</LocalIn>
+    <LocalIn>CallSoapPaged</LocalIn>
+    <LocalIn>StreamDataMerge</LocalIn>
+    <LocalIn>AddReportPromptFromProperty</LocalIn>
+    <LocalIn>AddReportPromptFromXml</LocalIn>
+    <LocalIn>CloudLogXSLTMessages</LocalIn>
+</DeadCode>

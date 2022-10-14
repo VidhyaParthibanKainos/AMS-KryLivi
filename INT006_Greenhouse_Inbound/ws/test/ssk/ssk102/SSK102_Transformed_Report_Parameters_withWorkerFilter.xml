@@ -1,0 +1,23 @@
+<wd:Report_Parameters xmlns:wd="urn:com.workday/bsvc">
+	<wd:Campaign wd:Descriptor="Big Data Insights, Technologies and Trends - Learning Campaign">
+		<wd:ID wd:type="WID">d9253d793a300189f075c8a26a095e66</wd:ID>
+	</wd:Campaign>
+	<wd:Campaign wd:Descriptor="Customer Service: Be Innovative - Learning Campaign">
+		<wd:ID wd:type="WID">d9253d793a3001de67a291c06a097366</wd:ID>
+	</wd:Campaign>
+	<wd:Campaign wd:Descriptor="Data Privacy Training - Learning Campaign">
+		<wd:ID wd:type="WID">d9253d793a3001a6a584190efb095a98</wd:ID>
+	</wd:Campaign>
+	<wd:Campaign wd:Descriptor="Leading with Purpose - Learning Campaign">
+		<wd:ID wd:type="WID">d9253d793a30010d3112e126fb096698</wd:ID>
+	</wd:Campaign>
+	<wd:Campaign wd:Descriptor="Engage through Storytelling - Learning Campaign">
+		<wd:ID wd:type="WID">d9253d793a3001e14962763dfb097398</wd:ID>
+	</wd:Campaign>
+	<wd:Workers>
+        <wd:ID wd:type="Employee_ID">23654</wd:ID>
+	</wd:Workers>
+	<wd:Workers>
+        <wd:ID wd:type="Employee_ID">21001</wd:ID>
+	</wd:Workers>
+</wd:Report_Parameters>

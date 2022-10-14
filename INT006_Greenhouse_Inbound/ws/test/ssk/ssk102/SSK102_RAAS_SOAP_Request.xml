@@ -1,0 +1,31 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wd="urn:com.workday/bsvc" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+    <soapenv:Header>
+        <wsse:Security soapenv:mustUnderstand="1">
+            <wsse:UsernameToken>
+                <wsse:Username>testUsername@testTenant</wsse:Username>
+                <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">testPassword</wsse:Password>
+            </wsse:UsernameToken>
+        </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <wd:Execute_Report>
+            <wd:Report_Parameters xmlns:wd="urn:com.workday/bsvc">
+                <wd:Campaign>
+                    <wd:ID wd:type="WID">d9253d793a3001de67a291c06a097366</wd:ID>
+                </wd:Campaign>
+                <wd:Campaign>
+                    <wd:ID wd:type="WID">d9253d793a3001e14962763dfb097398</wd:ID>
+                </wd:Campaign>
+                <wd:Campaign>
+                    <wd:ID wd:type="WID">d9253d793a30010d3112e126fb096698</wd:ID>
+                </wd:Campaign>
+                <wd:Campaign>
+                    <wd:ID wd:type="WID">d9253d793a3001a6a584190efb095a98</wd:ID>
+                </wd:Campaign>
+                <wd:Campaign>
+                    <wd:ID wd:type="WID">d9253d793a300189f075c8a26a095e66</wd:ID>
+                </wd:Campaign>
+            </wd:Report_Parameters>
+        </wd:Execute_Report>
+    </soapenv:Body>
+</soapenv:Envelope>

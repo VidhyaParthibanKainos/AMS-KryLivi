@@ -1,0 +1,105 @@
+<wd:Import_Eligible_Earnings_Override_Request xmlns:wd="urn:com.workday/bsvc" wd:version="v35.0">
+	<wd:Eligible_Earnings_Override_Period_Reference>
+		<wd:ID wd:type="Eligible_Earnings_Period_ID">EARN_PD_2019</wd:ID>
+	</wd:Eligible_Earnings_Override_Period_Reference>
+    <wd:Eligible_Earnings>
+        <wd:Eligible_Earnings_Data>
+            <wd:Eligible_Earnings_ID>31001_EARN_PD_2019</wd:Eligible_Earnings_ID>
+            <wd:Employee_Reference><wd:ID wd:type="Employee_ID">31001</wd:ID></wd:Employee_Reference>
+            <wd:Apply_to_All_Bonus_Plans>true</wd:Apply_to_All_Bonus_Plans>
+            <wd:Position_Reference><wd:ID wd:type="Position_ID">POS_00031001</wd:ID></wd:Position_Reference>
+            <wd:Amount>31001.00</wd:Amount>
+            <wd:Currency_Reference><wd:ID wd:type="Currency_ID">USD</wd:ID></wd:Currency_Reference>
+        </wd:Eligible_Earnings_Data>
+    </wd:Eligible_Earnings>
+    <wd:Eligible_Earnings>
+        <wd:Eligible_Earnings_Data>
+            <wd:Eligible_Earnings_ID>31002_EARN_PD_2019</wd:Eligible_Earnings_ID>
+            <wd:Employee_Reference><wd:ID wd:type="Employee_ID">31002</wd:ID></wd:Employee_Reference>
+            <wd:Apply_to_All_Bonus_Plans>true</wd:Apply_to_All_Bonus_Plans>
+            <wd:Position_Reference><wd:ID wd:type="Position_ID">POS_00031002</wd:ID></wd:Position_Reference>
+            <wd:Amount>31002.00</wd:Amount>
+            <wd:Currency_Reference><wd:ID wd:type="Currency_ID">USD</wd:ID></wd:Currency_Reference>
+        </wd:Eligible_Earnings_Data>
+    </wd:Eligible_Earnings>
+    <wd:Eligible_Earnings>
+        <wd:Eligible_Earnings_Data>
+            <wd:Eligible_Earnings_ID>31003_EARN_PD_2019</wd:Eligible_Earnings_ID>
+            <wd:Employee_Reference><wd:ID wd:type="Employee_ID">31003</wd:ID></wd:Employee_Reference>
+            <wd:Apply_to_All_Bonus_Plans>true</wd:Apply_to_All_Bonus_Plans>
+            <wd:Position_Reference><wd:ID wd:type="Position_ID">POS_00031003</wd:ID></wd:Position_Reference>
+            <wd:Amount>31003.00</wd:Amount>
+            <wd:Currency_Reference><wd:ID wd:type="Currency_ID">USD</wd:ID></wd:Currency_Reference>
+        </wd:Eligible_Earnings_Data>
+    </wd:Eligible_Earnings>
+    <wd:Eligible_Earnings>
+        <wd:Eligible_Earnings_Data>
+            <wd:Eligible_Earnings_ID>31004_EARN_PD_2019</wd:Eligible_Earnings_ID>
+            <wd:Employee_Reference><wd:ID wd:type="Employee_ID">31004</wd:ID></wd:Employee_Reference>
+            <wd:Apply_to_All_Bonus_Plans>true</wd:Apply_to_All_Bonus_Plans>
+            <wd:Position_Reference><wd:ID wd:type="Position_ID">POS_00031004</wd:ID></wd:Position_Reference>
+            <wd:Amount>31004.00</wd:Amount>
+            <wd:Currency_Reference><wd:ID wd:type="Currency_ID">USD</wd:ID></wd:Currency_Reference>
+        </wd:Eligible_Earnings_Data>
+    </wd:Eligible_Earnings>
+    <wd:Eligible_Earnings>
+        <wd:Eligible_Earnings_Data>
+            <wd:Eligible_Earnings_ID>31005_EARN_PD_2019</wd:Eligible_Earnings_ID>
+            <wd:Employee_Reference><wd:ID wd:type="Employee_ID">31005</wd:ID></wd:Employee_Reference>
+            <wd:Apply_to_All_Bonus_Plans>true</wd:Apply_to_All_Bonus_Plans>
+            <wd:Position_Reference><wd:ID wd:type="Position_ID">POS_00031005</wd:ID></wd:Position_Reference>
+            <wd:Amount>31005.00</wd:Amount>
+            <wd:Currency_Reference><wd:ID wd:type="Currency_ID">USD</wd:ID></wd:Currency_Reference>
+        </wd:Eligible_Earnings_Data>
+    </wd:Eligible_Earnings>
+    <wd:Eligible_Earnings>
+        <wd:Eligible_Earnings_Data>
+            <wd:Eligible_Earnings_ID>31006_EARN_PD_2019</wd:Eligible_Earnings_ID>
+            <wd:Employee_Reference><wd:ID wd:type="Employee_ID">31006</wd:ID></wd:Employee_Reference>
+            <wd:Apply_to_All_Bonus_Plans>true</wd:Apply_to_All_Bonus_Plans>
+            <wd:Position_Reference><wd:ID wd:type="Position_ID">POS_00031006</wd:ID></wd:Position_Reference>
+            <wd:Amount>31006.00</wd:Amount>
+            <wd:Currency_Reference><wd:ID wd:type="Currency_ID">USD</wd:ID></wd:Currency_Reference>
+        </wd:Eligible_Earnings_Data>
+    </wd:Eligible_Earnings>
+    <wd:Eligible_Earnings>
+        <wd:Eligible_Earnings_Data>
+            <wd:Eligible_Earnings_ID>31007_EARN_PD_2019</wd:Eligible_Earnings_ID>
+            <wd:Employee_Reference><wd:ID wd:type="Employee_ID">31007</wd:ID></wd:Employee_Reference>
+            <wd:Apply_to_All_Bonus_Plans>true</wd:Apply_to_All_Bonus_Plans>
+            <wd:Position_Reference><wd:ID wd:type="Position_ID">POS_00031007</wd:ID></wd:Position_Reference>
+            <wd:Amount>31007.00</wd:Amount>
+            <wd:Currency_Reference><wd:ID wd:type="Currency_ID">USD</wd:ID></wd:Currency_Reference>
+        </wd:Eligible_Earnings_Data>
+    </wd:Eligible_Earnings>
+    <wd:Eligible_Earnings>
+        <wd:Eligible_Earnings_Data>
+            <wd:Eligible_Earnings_ID>31008_EARN_PD_2019</wd:Eligible_Earnings_ID>
+            <wd:Employee_Reference><wd:ID wd:type="Employee_ID">31008</wd:ID></wd:Employee_Reference>
+            <wd:Apply_to_All_Bonus_Plans>true</wd:Apply_to_All_Bonus_Plans>
+            <wd:Position_Reference><wd:ID wd:type="Position_ID">POS_00031008</wd:ID></wd:Position_Reference>
+            <wd:Amount>31008.00</wd:Amount>
+            <wd:Currency_Reference><wd:ID wd:type="Currency_ID">USD</wd:ID></wd:Currency_Reference>
+        </wd:Eligible_Earnings_Data>
+    </wd:Eligible_Earnings>
+    <wd:Eligible_Earnings>
+        <wd:Eligible_Earnings_Data>
+            <wd:Eligible_Earnings_ID>31009_EARN_PD_2019</wd:Eligible_Earnings_ID>
+            <wd:Employee_Reference><wd:ID wd:type="Employee_ID">31009</wd:ID></wd:Employee_Reference>
+            <wd:Apply_to_All_Bonus_Plans>true</wd:Apply_to_All_Bonus_Plans>
+            <wd:Position_Reference><wd:ID wd:type="Position_ID">POS_00031009</wd:ID></wd:Position_Reference>
+            <wd:Amount>31009.00</wd:Amount>
+            <wd:Currency_Reference><wd:ID wd:type="Currency_ID">USD</wd:ID></wd:Currency_Reference>
+        </wd:Eligible_Earnings_Data>
+    </wd:Eligible_Earnings>
+    <wd:Eligible_Earnings>
+        <wd:Eligible_Earnings_Data>
+            <wd:Eligible_Earnings_ID>31010_EARN_PD_2019</wd:Eligible_Earnings_ID>
+            <wd:Employee_Reference><wd:ID wd:type="Employee_ID">31010</wd:ID></wd:Employee_Reference>
+            <wd:Apply_to_All_Bonus_Plans>true</wd:Apply_to_All_Bonus_Plans>
+            <wd:Position_Reference><wd:ID wd:type="Position_ID">POS_00031010</wd:ID></wd:Position_Reference>
+            <wd:Amount>31010.00</wd:Amount>
+            <wd:Currency_Reference><wd:ID wd:type="Currency_ID">USD</wd:ID></wd:Currency_Reference>
+        </wd:Eligible_Earnings_Data>
+    </wd:Eligible_Earnings>
+</wd:Import_Eligible_Earnings_Override_Request>

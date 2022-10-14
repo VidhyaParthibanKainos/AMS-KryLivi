@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	This simple document represents a RAAS report which returns the Employee_ID and an external ID.
+	The use case for this would be where we are receiving a document containing information which needs to be loaded into workday but only the external ID is available in
+	that document.  As a result we need to efficiently look up the employee ID from the external ID.  The Java map solution to this is to store the data in a HashMap
+	using the external ID as the key and the employee ID as the value.
+ -->
+<r:Report_Data xmlns:r="urn:report">
+	<r:Report_Entry>
+		<r:Employee_ID>21001</r:Employee_ID>
+		<r:External_ID>1</r:External_ID>
+		<r:Eligible>1</r:Eligible>
+	</r:Report_Entry>
+	<r:Report_Entry>
+		<r:Employee_ID>21002</r:Employee_ID>
+		<r:External_ID>2</r:External_ID>
+		<r:Eligible>0</r:Eligible>
+	</r:Report_Entry>
+	<r:Report_Entry>
+		<r:Employee_ID>21003</r:Employee_ID>
+		<r:External_ID>3</r:External_ID>
+		<r:Eligible>1</r:Eligible>
+	</r:Report_Entry>
+</r:Report_Data>

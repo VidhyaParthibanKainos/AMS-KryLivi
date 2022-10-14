@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wd:Report_Data xmlns:wd="urn:com.workday.report/CR_INT_Campaigns" xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+    <wd:Report_Entry>
+        <wd:Worker wd:Descriptor="Joya Cousino">
+            <wd:ID wd:type="WID">260242a6bfce10188b0bec981ef2143a</wd:ID>
+            <wd:ID wd:type="Employee_ID">23654</wd:ID>
+        </wd:Worker>
+        <wd:Campaign_Items>
+            <wd:Campaign_Item_Content wd:Descriptor="Big Data Insights, Technologies and Trends">
+                <wd:ID wd:type="WID">d9253d793a3001e88439a2b266091966</wd:ID>
+                <wd:ID wd:type="Learning_Course_ID">DIGITAL_COURSE-6-4</wd:ID>
+                <wd:ID wd:type="Learning_Course">Big Data Insights, Technologies and Trends</wd:ID>
+            </wd:Campaign_Item_Content>
+        </wd:Campaign_Items>
+    </wd:Report_Entry>
+</wd:Report_Data>

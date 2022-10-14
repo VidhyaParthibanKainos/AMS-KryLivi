@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wd:Report_Data xmlns:wd="urn:com.workday.report/MyShoes">
+	<wd:Report_Entry>
+		<wd:Size>EU 40</wd:Size>
+		<wd:Worker>
+			<wd:ID wd:type="Employee_ID">21001</wd:ID>
+			<wd:ID wd:type="WID">19f7dabb79994d29931cd139df6272ed</wd:ID>
+		</wd:Worker>
+	</wd:Report_Entry>
+	<wd:Report_Entry>
+		<wd:Size>EU 41</wd:Size>
+		<wd:Worker>
+			<wd:ID wd:type="Employee_ID">21001</wd:ID>
+			<wd:ID wd:type="WID">19f7dabb79994d29931cd139df6272ed</wd:ID>
+		</wd:Worker>
+	</wd:Report_Entry>
+	<wd:Report_Entry>
+		<wd:Size>EU 42</wd:Size>
+		<wd:Worker>
+			<wd:ID wd:type="Employee_ID">21001</wd:ID>
+			<wd:ID wd:type="WID">19f7dabb79994d29931cd139df6272ed</wd:ID>
+		</wd:Worker>
+	</wd:Report_Entry>
+	<wd:Report_Entry>
+		<wd:Size>EU 43</wd:Size>
+		<wd:Worker>
+			<wd:ID wd:type="Employee_ID">21001</wd:ID>
+			<wd:ID wd:type="WID">19f7dabb79994d29931cd139df6272ed</wd:ID>
+		</wd:Worker>
+	</wd:Report_Entry>
+	<wd:Report_Entry>
+		<wd:Size>EU 44</wd:Size>
+		<wd:Worker>
+			<wd:ID wd:type="Employee_ID">21001</wd:ID>
+			<wd:ID wd:type="WID">19f7dabb79994d29931cd139df6272ed</wd:ID>
+		</wd:Worker>
+	</wd:Report_Entry>
+</wd:Report_Data>

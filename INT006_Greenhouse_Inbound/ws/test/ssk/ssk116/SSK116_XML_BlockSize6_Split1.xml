@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- 
+	This version of the report output has 18 entries so that the number of entries is an exact multiple of the configured block size.  This is
+	used to test that no empty final message is generated
+ -->
+<Block xmlns:rpt="urn:report">
+    <rpt:Report_Entry>
+        <rpt:ID>21001</rpt:ID>
+        <rpt:Full_Legal_Name>Logan McNeil</rpt:Full_Legal_Name>
+    </rpt:Report_Entry>
+    <rpt:Report_Entry>
+        <rpt:ID>21002</rpt:ID>
+        <rpt:Full_Legal_Name>Steve Morgan</rpt:Full_Legal_Name>
+    </rpt:Report_Entry>
+    <rpt:Report_Entry>
+        <rpt:ID>21003</rpt:ID>
+        <rpt:Full_Legal_Name>Oliver Reynolds</rpt:Full_Legal_Name>
+    </rpt:Report_Entry>
+    <rpt:Report_Entry>
+        <rpt:ID>21004</rpt:ID>
+        <rpt:Full_Legal_Name>Maximilian Schneider</rpt:Full_Legal_Name>
+    </rpt:Report_Entry>
+    <rpt:Report_Entry>
+        <rpt:ID>21005</rpt:ID>
+        <rpt:Full_Legal_Name>Teresa Serrano</rpt:Full_Legal_Name>
+    </rpt:Report_Entry>
+    <rpt:Report_Entry>
+        <rpt:ID>21006</rpt:ID>
+        <rpt:Full_Legal_Name>Maria Cardoza</rpt:Full_Legal_Name>
+    </rpt:Report_Entry>
+</Block>

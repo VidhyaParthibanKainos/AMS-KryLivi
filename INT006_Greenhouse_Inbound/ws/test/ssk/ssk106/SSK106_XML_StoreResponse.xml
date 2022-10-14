@@ -1,0 +1,20 @@
+<entry xmlns="http://www.w3.org/2005/Atom">
+	<id>18154436-6370-405b-3809-2f4102671b5a</id>
+	<content type="text/xml"
+		src="/testTenant/cloud/18154436-6370-405b-3809-2f4102671b5a.atom" />
+	<link href="/testTenant/cloud/18154436-6370-405b-3809-2f4102671b5a"
+		rel="edit-media" />
+	<link href="/testTenant/cloud/18154436-6370-405b-3809-2f4102671b5a.atom"
+		rel="edit" />
+	<expires xmlns="http://www.workday.com/blobitory/10">2019-11-04T19:54:04.803Z</expires>
+	<published>2019-08-06T19:54:04.805Z</published>
+	<updated>2019-08-06T19:54:04.805Z</updated>
+	<title type="text">INT_Results.xml</title>
+	<size xmlns="http://www.workday.com/blobitory/10">160101</size>
+	<encrypted xmlns="http://www.workday.com/blobitory/10">true</encrypted>
+	<compressed xmlns="http://www.workday.com/blobitory/10">true</compressed>
+	<attachment xmlns="http://www.workday.com/blobitory/10">false</attachment>
+	<immutable xmlns="http://www.workday.com/blobitory/10">true</immutable>
+	<parts xmlns="http://www.workday.com/blobitory/10">0</parts>
+	<source-tenant xmlns="http://www.workday.com/blobitory/10">testTenant</source-tenant>
+</entry>

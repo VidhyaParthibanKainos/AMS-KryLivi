@@ -1,0 +1,24 @@
+<wd:Import_Process_Messages xmlns:wd="urn:com.workday/bsvc">
+	<wd:Import_Process_Message>
+		<wd:Import_Process_Message_Reference wd:Descriptor="2019 04 28 13 47 01 488 -0700 / Error / Invalid ID value.  'POS_21015' is not a valid ID value for type = 'Position_ID'">
+			<wd:ID wd:type="WID"></wd:ID>
+		</wd:Import_Process_Message_Reference>
+		<wd:Import_Process_Message_Data>
+			<wd:Timestamp>2019-04-28T13:47:01.488-07:00</wd:Timestamp>
+			<wd:Severity>Error</wd:Severity>
+			<wd:Message_Summary>Invalid ID value.  'POS_21015' is not a valid ID value for type = 'Position_ID'</wd:Message_Summary>
+			<wd:Line_Number>5</wd:Line_Number>
+		</wd:Import_Process_Message_Data>
+	</wd:Import_Process_Message>
+	<wd:Import_Process_Message>
+		<wd:Import_Process_Message_Reference wd:Descriptor="2019 04 28 13 47 01 488 -0700 / Error / Invalid ID value.  'POS_21020' is not a valid ID value for type = 'Position_ID'">
+			<wd:ID wd:type="WID"></wd:ID>
+		</wd:Import_Process_Message_Reference>
+		<wd:Import_Process_Message_Data>
+			<wd:Timestamp>2019-04-28T13:47:01.488-07:00</wd:Timestamp>
+			<wd:Severity>Error</wd:Severity>
+			<wd:Message_Summary>Invalid ID value.  'POS_21020' is not a valid ID value for type = 'Position_ID'</wd:Message_Summary>
+			<wd:Line_Number>10</wd:Line_Number>
+		</wd:Import_Process_Message_Data>
+	</wd:Import_Process_Message>
+</wd:Import_Process_Messages>

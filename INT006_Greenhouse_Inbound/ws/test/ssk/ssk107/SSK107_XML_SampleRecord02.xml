@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<wd:Report_Data xmlns:wd="urn:com.workday.report/CR_Sample_02">
+    <wd:Report_Entry>
+        <wd:Worker wd:Descriptor="Adrian Martin (21104)">
+            <wd:ID wd:type="WID">66def25413f74c13a90829e466a04f23</wd:ID>
+            <wd:ID wd:type="Employee_ID">21104</wd:ID>
+        </wd:Worker>
+        <wd:RedundantID>66def25413f74c13a90829e466a04f23</wd:RedundantID>
+    </wd:Report_Entry>
+</wd:Report_Data>

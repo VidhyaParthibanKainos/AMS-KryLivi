@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- 
+	This version of the report output has 18 entries so that the number of entries is an exact multiple of the configured block size.  This is
+	used to test that no empty final message is generated
+ -->
+<rpt:Report_Data xmlns:rpt="urn:report">
+</rpt:Report_Data>

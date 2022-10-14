@@ -1,0 +1,13 @@
+{
+    "error": "invalid request: errors have occurred",
+    "errors": [
+        {
+            "error": "size",
+            "location": "Line: 2, column: 11"
+        },
+        {
+            "error": "size",
+            "location": "Line: 5, column: 11"
+        }
+    ]
+}

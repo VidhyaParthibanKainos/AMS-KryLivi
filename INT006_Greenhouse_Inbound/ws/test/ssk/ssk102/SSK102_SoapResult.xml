@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+	<env:Body>
+		<wd:Report_Data xmlns:wd="urn:com.workday.report/CR_INT_Campaigns">
+		    <wd:Report_Entry>
+		        <wd:Worker wd:Descriptor="Joya Cousino">
+		            <wd:ID wd:type="WID">260242a6bfce10188b0bec981ef2143a</wd:ID>
+		            <wd:ID wd:type="Employee_ID">23654</wd:ID>
+		        </wd:Worker>
+		        <wd:Campaign_Items>
+		            <wd:Campaign_Item_Content wd:Descriptor="Big Data Insights, Technologies and Trends">
+		                <wd:ID wd:type="WID">d9253d793a3001e88439a2b266091966</wd:ID>
+		                <wd:ID wd:type="Learning_Course_ID">DIGITAL_COURSE-6-4</wd:ID>
+		                <wd:ID wd:type="Learning_Course">Big Data Insights, Technologies and Trends</wd:ID>
+		            </wd:Campaign_Item_Content>
+		        </wd:Campaign_Items>
+		    </wd:Report_Entry>
+		    <wd:Report_Entry>
+		        <wd:Worker wd:Descriptor="Logan McNeil">
+		            <wd:ID wd:type="WID">3aa5550b7fe348b98d7b5741afc65534</wd:ID>
+		            <wd:ID wd:type="Employee_ID">21001</wd:ID>
+		        </wd:Worker>
+		        <wd:Campaign_Items>
+		            <wd:Campaign_Item_Content wd:Descriptor="Customer Service: Be Innovative">
+		                <wd:ID wd:type="WID">d9253d793a300159046f507d6a095b66</wd:ID>
+		                <wd:ID wd:type="Learning_Course_ID">DIGITAL_COURSE-6-5</wd:ID>
+		                <wd:ID wd:type="Learning_Course">Customer Service: Be Innovative</wd:ID>
+		            </wd:Campaign_Item_Content>
+		        </wd:Campaign_Items>
+		    </wd:Report_Entry>
+		    <wd:Report_Entry>
+		        <wd:Worker wd:Descriptor="Oliver Reynolds">
+		            <wd:ID wd:type="WID">3895af7993ff4c509cbea2e1817172e0</wd:ID>
+		            <wd:ID wd:type="Employee_ID">21003</wd:ID>
+		        </wd:Worker>
+		        <wd:Campaign_Items>
+		            <wd:Campaign_Item_Content wd:Descriptor="Data Privacy Training">
+		                <wd:ID wd:type="WID">d9253d793a300142fbaa35bffa094798</wd:ID>
+		                <wd:ID wd:type="Learning_Course_ID">DIGITAL_COURSE-6-7</wd:ID>
+		                <wd:ID wd:type="Learning_Course">Data Privacy Training</wd:ID>
+		            </wd:Campaign_Item_Content>
+		        </wd:Campaign_Items>
+		    </wd:Report_Entry>
+		    <wd:Report_Entry>
+		        <wd:Worker wd:Descriptor="Steve Morgan">
+		            <wd:ID wd:type="WID">0e44c92412d34b01ace61e80a47aaf6d</wd:ID>
+		            <wd:ID wd:type="Employee_ID">21002</wd:ID>
+		        </wd:Worker>
+		        <wd:Campaign_Items>
+		            <wd:Campaign_Item_Content wd:Descriptor="Leading with Purpose">
+		                <wd:ID wd:type="WID">d9253d793a3001843cc8befefa095898</wd:ID>
+		                <wd:ID wd:type="Learning_Course_ID">DIGITAL_COURSE-6-9</wd:ID>
+		                <wd:ID wd:type="Learning_Course">Leading with Purpose</wd:ID>
+		            </wd:Campaign_Item_Content>
+		        </wd:Campaign_Items>
+		    </wd:Report_Entry>
+		    <wd:Report_Entry>
+		        <wd:Worker wd:Descriptor="Teresa Serrano">
+		            <wd:ID wd:type="WID">26c439a5deed4a7dbab76709e0d2d2ca</wd:ID>
+		            <wd:ID wd:type="Employee_ID">21005</wd:ID>
+		        </wd:Worker>
+		        <wd:Campaign_Items>
+		            <wd:Campaign_Item_Content wd:Descriptor="Engage through Storytelling">
+		                <wd:ID wd:type="WID">d9253d793a30019f3e1611dafa094f98</wd:ID>
+		                <wd:ID wd:type="Learning_Course_ID">DIGITAL_COURSE-6-8</wd:ID>
+		                <wd:ID wd:type="Learning_Course">Engage through Storytelling</wd:ID>
+		            </wd:Campaign_Item_Content>
+		        </wd:Campaign_Items>
+		    </wd:Report_Entry>
+		    <wd:Report_Entry>
+		        <wd:Worker wd:Descriptor="Renay Salazar">
+		            <wd:ID wd:type="WID">fec3c2a513211023a8c9845ac5e20fa3</wd:ID>
+		            <wd:ID wd:type="Employee_ID">23843</wd:ID>
+		        </wd:Worker>
+		        <wd:Campaign_Items>
+		            <wd:Campaign_Item_Content wd:Descriptor="Introverts and Leadership">
+		                <wd:ID wd:type="WID">2a2f5f39f140015965903e5f820bc405</wd:ID>
+		                <wd:ID wd:type="Learning_Course_ID">DIGITAL_COURSE-6-14</wd:ID>
+		                <wd:ID wd:type="Learning_Course">Introverts and Leadership</wd:ID>
+		            </wd:Campaign_Item_Content>
+		        </wd:Campaign_Items>
+		    </wd:Report_Entry>
+		    <wd:Report_Entry>
+		        <wd:Worker wd:Descriptor="Rey Scavenger">
+		            <wd:ID wd:type="WID">5440ce791ed510abfb9c9da9721e09a4</wd:ID>
+		            <wd:ID wd:type="Employee_ID">25448</wd:ID>
+		        </wd:Worker>
+		        <wd:Campaign_Items>
+		            <wd:Campaign_Item_Content wd:Descriptor="Radical Transparency">
+		                <wd:ID wd:type="WID">2a2f5f39f140010947a26dfe7e0b9305</wd:ID>
+		                <wd:ID wd:type="Learning_Course_ID">DIGITAL_COURSE-6-13</wd:ID>
+		                <wd:ID wd:type="Learning_Course">Radical Transparency</wd:ID>
+		            </wd:Campaign_Item_Content>
+		        </wd:Campaign_Items>
+		    </wd:Report_Entry>
+		</wd:Report_Data>
+	</env:Body>
+</env:Envelope>

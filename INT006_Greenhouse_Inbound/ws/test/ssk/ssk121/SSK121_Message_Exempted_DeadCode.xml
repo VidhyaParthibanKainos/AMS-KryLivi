@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<DeadCode xmlns:spring="http://www.springframework.org/schema/beans">
+    <LocalIn>CallSoap</LocalIn>
+    <LocalIn>PopulateJavaMap</LocalIn>
+    <LocalIn>CallRaaS</LocalIn>
+    <LocalIn>LoadFile</LocalIn>
+    <LocalIn>GenerateOutput</LocalIn>
+    <LocalIn>GetDocumentList</LocalIn>
+    <LocalIn>StreamDataMerge</LocalIn>
+    <LocalIn>AddReportPromptFromProperty</LocalIn>
+    <LocalIn>AddReportPromptFromXml</LocalIn>
+    <LocalIn>GetDISResults</LocalIn>
+    <LocalIn>CloudLogETVXTTMessages</LocalIn>
+    <LocalIn>CloudLogXSLTMessages</LocalIn>
+    <LocalIn>GetDISResultsParallel</LocalIn>
+    <LocalIn>CallSoapImport</LocalIn>
+    <LocalIn>ReportResultsOfCallSoapImport</LocalIn>
+    <LocalIn>FinalizeCallSoapImport</LocalIn>
+    <LocalIn>CallSoapPaged</LocalIn>
+</DeadCode>

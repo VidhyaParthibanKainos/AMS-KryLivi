@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<wd:Report_Data xmlns:wd="urn:com.workday.report/CR_Sample_03">
+    <wd:Report_Entry>
+        <wd:Worker wd:Descriptor="Adrian Martin (21104)">
+            <wd:ID wd:type="WID">66def25413f74c13a90829e466a04f23</wd:ID>
+            <wd:ID wd:type="Employee_ID">21104</wd:ID>
+        </wd:Worker>
+        <wd:Length_of_Service_in_Months>84</wd:Length_of_Service_in_Months>
+        <wd:Primary_Work_Address_group>
+            <wd:Address_Line_1>3755 Peachtree Road NE</wd:Address_Line_1>
+            <wd:city>Atlanta</wd:city>
+            <wd:State_ISO_Code>GA</wd:State_ISO_Code>
+            <wd:Postal_Code>30305</wd:Postal_Code>
+        </wd:Primary_Work_Address_group>
+    </wd:Report_Entry>
+</wd:Report_Data>

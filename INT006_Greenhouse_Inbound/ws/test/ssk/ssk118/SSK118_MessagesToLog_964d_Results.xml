@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<wd:Messages xmlns:wd="urn:com.workday/bsvc">
+   <wd:Message>
+       <wd:Timestamp>2019-04-28T13:47:01.488-07:00</wd:Timestamp>
+       <wd:Severity>Error</wd:Severity>
+       <wd:Message_Summary>Invalid ID value.  'POS_21015' is not a valid ID value for type = 'Position_ID'</wd:Message_Summary>
+       <wd:Line_Number>5</wd:Line_Number>
+       <wd:Request_Data>
+           <wd:Eligible_Earnings_Override_Period_Reference>
+               <wd:ID wd:type="Eligible_Earnings_Period_ID">EARN_PD_2019</wd:ID>
+           </wd:Eligible_Earnings_Override_Period_Reference>
+           <wd:Eligible_Earnings>
+               <wd:Eligible_Earnings_Data>
+                   <wd:Eligible_Earnings_ID>31005_EARN_PD_2019</wd:Eligible_Earnings_ID>
+                   <wd:Employee_Reference>
+                       <wd:ID wd:type="Employee_ID">31005</wd:ID>
+                   </wd:Employee_Reference>
+                   <wd:Apply_to_All_Bonus_Plans>true</wd:Apply_to_All_Bonus_Plans>
+                   <wd:Position_Reference>
+                       <wd:ID wd:type="Position_ID">POS_00031005</wd:ID>
+                   </wd:Position_Reference>
+                   <wd:Amount>31005.00</wd:Amount>
+                   <wd:Currency_Reference>
+                       <wd:ID wd:type="Currency_ID">USD</wd:ID>
+                   </wd:Currency_Reference>
+               </wd:Eligible_Earnings_Data>
+           </wd:Eligible_Earnings>
+       </wd:Request_Data>
+   </wd:Message>
+   <wd:Message>
+       <wd:Timestamp>2019-04-28T13:47:01.488-07:00</wd:Timestamp>
+       <wd:Severity>Error</wd:Severity>
+       <wd:Message_Summary>Invalid ID value.  'POS_21020' is not a valid ID value for type = 'Position_ID'</wd:Message_Summary>
+       <wd:Line_Number>10</wd:Line_Number>
+       <wd:Request_Data>
+           <wd:Eligible_Earnings_Override_Period_Reference>
+               <wd:ID wd:type="Eligible_Earnings_Period_ID">EARN_PD_2019</wd:ID>
+           </wd:Eligible_Earnings_Override_Period_Reference>
+           <wd:Eligible_Earnings>
+               <wd:Eligible_Earnings_Data>
+                   <wd:Eligible_Earnings_ID>31010_EARN_PD_2019</wd:Eligible_Earnings_ID>
+                   <wd:Employee_Reference>
+                       <wd:ID wd:type="Employee_ID">31010</wd:ID>
+                   </wd:Employee_Reference>
+                   <wd:Apply_to_All_Bonus_Plans>true</wd:Apply_to_All_Bonus_Plans>
+                   <wd:Position_Reference>
+                       <wd:ID wd:type="Position_ID">POS_00031010</wd:ID>
+                   </wd:Position_Reference>
+                   <wd:Amount>31010.00</wd:Amount>
+                   <wd:Currency_Reference>
+                       <wd:ID wd:type="Currency_ID">USD</wd:ID>
+                   </wd:Currency_Reference>
+               </wd:Eligible_Earnings_Data>
+           </wd:Eligible_Earnings>
+       </wd:Request_Data>
+   </wd:Message>
+</wd:Messages>

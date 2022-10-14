@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Results>
+<wd:Report_Data xmlns:wd="urn:com.workday.report/CR_Sample_01">
+    <wd:Report_Entry>
+        <wd:Worker wd:Descriptor="Adrian Martin (21104)">
+            <wd:ID wd:type="WID">66def25413f74c13a90829e466a04f23</wd:ID>
+            <wd:ID wd:type="Employee_ID">21104</wd:ID>
+        </wd:Worker>
+        <wd:LookupFragment>
+            <wd:OtherID>xyz21104</wd:OtherID>
+            <wd:OtherAddress>
+                <wd:Address_Line_1>0 Highway Pl.</wd:Address_Line_1>
+                <wd:city>Metropolis</wd:city>
+                <wd:State_ISO_Code>NY</wd:State_ISO_Code>
+                <wd:Postal_Code>20102</wd:Postal_Code>
+            </wd:OtherAddress>
+            <wd:Cost_Center>4147</wd:Cost_Center>
+            <wd:Performance_Score>0.37</wd:Performance_Score>
+            <wd:Security>
+                <wd:Temporary_Passcode>557605</wd:Temporary_Passcode>
+                <wd:Last_Passcode>408695</wd:Last_Passcode>
+                <wd:Next_Passcode>23623</wd:Next_Passcode>
+            </wd:Security>
+        </wd:LookupFragment>
+    </wd:Report_Entry>
+</wd:Report_Data>
+<wd:Report_Data xmlns:wd="urn:com.workday.report/CR_Sample_01">
+    <wd:Report_Entry>
+        <wd:Worker wd:Descriptor="Adrian Martin (21104)">
+            <wd:ID wd:type="WID">66def25413f74c13a90829e466a04f23</wd:ID>
+            <wd:ID wd:type="Employee_ID">21104</wd:ID>
+        </wd:Worker>
+        <wd:LookupFragment>
+            <wd:OtherID>xyz21104</wd:OtherID>
+            <wd:OtherAddress>
+                <wd:Address_Line_1>0 Highway Pl.</wd:Address_Line_1>
+                <wd:city>Metropolis</wd:city>
+                <wd:State_ISO_Code>NY</wd:State_ISO_Code>
+                <wd:Postal_Code>20102</wd:Postal_Code>
+            </wd:OtherAddress>
+            <wd:Cost_Center>4147</wd:Cost_Center>
+            <wd:Performance_Score>0.37</wd:Performance_Score>
+            <wd:Security>
+                <wd:Temporary_Passcode>557605</wd:Temporary_Passcode>
+                <wd:Last_Passcode>408695</wd:Last_Passcode>
+                <wd:Next_Passcode>23623</wd:Next_Passcode>
+            </wd:Security>
+        </wd:LookupFragment>
+    </wd:Report_Entry>
+</wd:Report_Data>
+<wd:Report_Data xmlns:wd="urn:com.workday.report/CR_Sample_02">
+    <wd:Report_Entry>
+        <wd:Worker wd:Descriptor="Adrian Martin (21104)">
+            <wd:ID wd:type="WID">66def25413f74c13a90829e466a04f23</wd:ID>
+            <wd:ID wd:type="Employee_ID">21104</wd:ID>
+        </wd:Worker>
+        <wd:RedundantID>66def25413f74c13a90829e466a04f23</wd:RedundantID>
+    </wd:Report_Entry>
+</wd:Report_Data>
+</Results>

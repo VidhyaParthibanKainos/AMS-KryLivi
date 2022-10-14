@@ -1,0 +1,1 @@
+This is just text instead of XML as would've been expected by the integration step.

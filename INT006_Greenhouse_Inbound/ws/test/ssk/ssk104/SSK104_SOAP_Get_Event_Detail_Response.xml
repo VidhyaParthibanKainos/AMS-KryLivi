@@ -1,0 +1,587 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+    <env:Body>
+        <wd:Get_Event_Details_Response xmlns:wd="urn:com.workday/bsvc" wd:version="v32.0">
+            <wd:Request_References>
+                <wd:Event_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 00">
+                    <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002900</wd:ID>
+                </wd:Event_Reference>
+                <wd:Event_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 01">
+                    <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002901</wd:ID>
+                </wd:Event_Reference>
+                <wd:Event_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 02">
+                    <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002902</wd:ID>
+                </wd:Event_Reference>
+                <wd:Event_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 03">
+                    <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002903</wd:ID>
+                </wd:Event_Reference>
+                <wd:Event_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 04">
+                    <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002904</wd:ID>
+                </wd:Event_Reference>
+                <wd:Event_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 05">
+                    <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002905</wd:ID>
+                </wd:Event_Reference>
+                <wd:Event_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 06">
+                    <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002906</wd:ID>
+                </wd:Event_Reference>
+                <wd:Event_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 07">
+                    <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002907</wd:ID>
+                </wd:Event_Reference>
+                <wd:Event_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 08">
+                    <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002908</wd:ID>
+                </wd:Event_Reference>
+                <wd:Event_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 09">
+                    <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002909</wd:ID>
+                </wd:Event_Reference>
+            </wd:Request_References>
+            <wd:Response_Results>
+                <wd:Total_Results>10</wd:Total_Results>
+                <wd:Total_Pages>1</wd:Total_Pages>
+                <wd:Page_Results>10</wd:Page_Results>
+                <wd:Page>1</wd:Page>
+            </wd:Response_Results>
+            <wd:Response_Data>
+                <wd:Event>
+                    <wd:Event_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 00">
+                        <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002900</wd:ID>
+                    </wd:Event_Reference>
+                    <wd:Event_Detail_Data>
+                        <wd:Creation_Date>2019-02-25T06:23:12.831-08:00</wd:Creation_Date>
+                        <wd:Due_Date>2019-03-04</wd:Due_Date>
+                        <wd:Completed_Date>2019-02-25T06:23:12.831-08:00</wd:Completed_Date>
+                        <wd:Event_State_Reference wd:Descriptor="Successfully Completed">
+                            <wd:ID wd:type="WID">b90bc51be01d4ae99b603b02b073714d</wd:ID>
+                        </wd:Event_State_Reference>
+                        <wd:Event_Target_Reference wd:Descriptor="Position - FirstName LastName ">
+                            <wd:ID wd:type="WID">abc35653991e40ab8429db0ba259a125</wd:ID>
+                            <wd:ID wd:type="Position_ID">P-00004</wd:ID>
+                        </wd:Event_Target_Reference>
+                        <wd:Initiating_Person_Reference wd:Descriptor="Workday Implementer">
+                            <wd:ID wd:type="WID">9432fb77379c493e89d55e12c24c949c</wd:ID>
+                        </wd:Initiating_Person_Reference>
+                        <wd:Process_History_Data>
+                            <wd:Process_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 00">
+                                <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002900</wd:ID>
+                            </wd:Process_Reference>
+                            <wd:Workflow_Step>
+                                <wd:Workflow_Step_Reference wd:Descriptor="Request One-Time Payment for 1000 Global Modern Services step a - Initiation">
+                                    <wd:ID wd:type="WID">1f4d8db58a4b46e5b5bc098fa2590e8d</wd:ID>
+                                    <wd:ID wd:type="Workflow_Step_ID">WORKFLOW_STEP-4-GMS-1384</wd:ID>
+                                </wd:Workflow_Step_Reference>
+                                <wd:Workflow_Step_Data>
+                                    <wd:Order>a</wd:Order>
+                                    <wd:Workflow_Step_Type_Reference wd:Descriptor="Initiation">
+                                        <wd:ID wd:type="WID">d8c892f4446c11de98360015c5e6daf6</wd:ID>
+                                        <wd:ID wd:type="Workflow_Step_Type_ID">INITIATION</wd:ID>
+                                    </wd:Workflow_Step_Type_Reference>
+                                </wd:Workflow_Step_Data>
+                            </wd:Workflow_Step>
+                            <wd:Status_Reference wd:Descriptor="Step Completed">
+                                <wd:ID wd:type="WID">d9e41366446c11de98360015c5e6daf6</wd:ID>
+                                <wd:ID wd:type="Event_Record_Action_Code">COMPLETE</wd:ID>
+                            </wd:Status_Reference>
+                            <wd:Completed_Date>2019-02-25T06:23:12.831-08:00</wd:Completed_Date>
+                            <wd:Due_Date>2019-03-04</wd:Due_Date>
+                            <wd:Workflow_Process_Participant_Reference wd:Descriptor="wd-implementer / Workday Implementer">
+                                <wd:ID wd:type="WID">64700e15a04847f6ac13343b007478e3</wd:ID>
+                                <wd:ID wd:type="System_User_ID">wd-implementer</wd:ID>
+                                <wd:ID wd:type="WorkdayUserName">wd-implementer</wd:ID>
+                            </wd:Workflow_Process_Participant_Reference>
+                        </wd:Process_History_Data>
+                        <wd:Remaining_Process_Data>
+                            <wd:Event_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 00">
+                                <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002900</wd:ID>
+                            </wd:Event_Reference>
+                        </wd:Remaining_Process_Data>
+                    </wd:Event_Detail_Data>
+                </wd:Event>
+                <wd:Event>
+                    <wd:Event_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 01">
+                        <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002901</wd:ID>
+                    </wd:Event_Reference>
+                    <wd:Event_Detail_Data>
+                        <wd:Creation_Date>2019-02-25T06:23:12.831-08:00</wd:Creation_Date>
+                        <wd:Due_Date>2019-03-04</wd:Due_Date>
+                        <wd:Completed_Date>2019-02-25T06:23:12.831-08:00</wd:Completed_Date>
+                        <wd:Event_State_Reference wd:Descriptor="Successfully Completed">
+                            <wd:ID wd:type="WID">b90bc51be01d4ae99b603b02b073714d</wd:ID>
+                        </wd:Event_State_Reference>
+                        <wd:Event_Target_Reference wd:Descriptor="Position - FirstName LastName ">
+                            <wd:ID wd:type="WID">abc35653991e40ab8429db0ba259a125</wd:ID>
+                            <wd:ID wd:type="Position_ID">P-00004</wd:ID>
+                        </wd:Event_Target_Reference>
+                        <wd:Initiating_Person_Reference wd:Descriptor="Workday Implementer">
+                            <wd:ID wd:type="WID">9432fb77379c493e89d55e12c24c949c</wd:ID>
+                        </wd:Initiating_Person_Reference>
+                        <wd:Process_History_Data>
+                            <wd:Process_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 01">
+                                <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002901</wd:ID>
+                            </wd:Process_Reference>
+                            <wd:Workflow_Step>
+                                <wd:Workflow_Step_Reference wd:Descriptor="Request One-Time Payment for 1000 Global Modern Services step a - Initiation">
+                                    <wd:ID wd:type="WID">1f4d8db58a4b46e5b5bc098fa2590e8d</wd:ID>
+                                    <wd:ID wd:type="Workflow_Step_ID">WORKFLOW_STEP-4-GMS-1384</wd:ID>
+                                </wd:Workflow_Step_Reference>
+                                <wd:Workflow_Step_Data>
+                                    <wd:Order>a</wd:Order>
+                                    <wd:Workflow_Step_Type_Reference wd:Descriptor="Initiation">
+                                        <wd:ID wd:type="WID">d8c892f4446c11de98360015c5e6daf6</wd:ID>
+                                        <wd:ID wd:type="Workflow_Step_Type_ID">INITIATION</wd:ID>
+                                    </wd:Workflow_Step_Type_Reference>
+                                </wd:Workflow_Step_Data>
+                            </wd:Workflow_Step>
+                            <wd:Status_Reference wd:Descriptor="Step Completed">
+                                <wd:ID wd:type="WID">d9e41366446c11de98360015c5e6daf6</wd:ID>
+                                <wd:ID wd:type="Event_Record_Action_Code">COMPLETE</wd:ID>
+                            </wd:Status_Reference>
+                            <wd:Completed_Date>2019-02-25T06:23:12.831-08:00</wd:Completed_Date>
+                            <wd:Due_Date>2019-03-04</wd:Due_Date>
+                            <wd:Workflow_Process_Participant_Reference wd:Descriptor="wd-implementer / Workday Implementer">
+                                <wd:ID wd:type="WID">64700e15a04847f6ac13343b007478e3</wd:ID>
+                                <wd:ID wd:type="System_User_ID">wd-implementer</wd:ID>
+                                <wd:ID wd:type="WorkdayUserName">wd-implementer</wd:ID>
+                            </wd:Workflow_Process_Participant_Reference>
+                        </wd:Process_History_Data>
+                        <wd:Remaining_Process_Data>
+                            <wd:Event_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 01">
+                                <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002901</wd:ID>
+                            </wd:Event_Reference>
+                        </wd:Remaining_Process_Data>
+                    </wd:Event_Detail_Data>
+                </wd:Event>
+                <wd:Event>
+                    <wd:Event_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 02">
+                        <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002902</wd:ID>
+                    </wd:Event_Reference>
+                    <wd:Event_Detail_Data>
+                        <wd:Creation_Date>2019-02-25T06:23:12.831-08:00</wd:Creation_Date>
+                        <wd:Due_Date>2019-03-04</wd:Due_Date>
+                        <wd:Completed_Date>2019-02-25T06:23:12.831-08:00</wd:Completed_Date>
+                        <wd:Event_State_Reference wd:Descriptor="Successfully Completed">
+                            <wd:ID wd:type="WID">b90bc51be01d4ae99b603b02b073714d</wd:ID>
+                        </wd:Event_State_Reference>
+                        <wd:Event_Target_Reference wd:Descriptor="Position - FirstName LastName ">
+                            <wd:ID wd:type="WID">abc35653991e40ab8429db0ba259a125</wd:ID>
+                            <wd:ID wd:type="Position_ID">P-00004</wd:ID>
+                        </wd:Event_Target_Reference>
+                        <wd:Initiating_Person_Reference wd:Descriptor="Workday Implementer">
+                            <wd:ID wd:type="WID">9432fb77379c493e89d55e12c24c949c</wd:ID>
+                        </wd:Initiating_Person_Reference>
+                        <wd:Process_History_Data>
+                            <wd:Process_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 02">
+                                <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002902</wd:ID>
+                            </wd:Process_Reference>
+                            <wd:Workflow_Step>
+                                <wd:Workflow_Step_Reference wd:Descriptor="Request One-Time Payment for 1000 Global Modern Services step a - Initiation">
+                                    <wd:ID wd:type="WID">1f4d8db58a4b46e5b5bc098fa2590e8d</wd:ID>
+                                    <wd:ID wd:type="Workflow_Step_ID">WORKFLOW_STEP-4-GMS-1384</wd:ID>
+                                </wd:Workflow_Step_Reference>
+                                <wd:Workflow_Step_Data>
+                                    <wd:Order>a</wd:Order>
+                                    <wd:Workflow_Step_Type_Reference wd:Descriptor="Initiation">
+                                        <wd:ID wd:type="WID">d8c892f4446c11de98360015c5e6daf6</wd:ID>
+                                        <wd:ID wd:type="Workflow_Step_Type_ID">INITIATION</wd:ID>
+                                    </wd:Workflow_Step_Type_Reference>
+                                </wd:Workflow_Step_Data>
+                            </wd:Workflow_Step>
+                            <wd:Status_Reference wd:Descriptor="Step Completed">
+                                <wd:ID wd:type="WID">d9e41366446c11de98360015c5e6daf6</wd:ID>
+                                <wd:ID wd:type="Event_Record_Action_Code">COMPLETE</wd:ID>
+                            </wd:Status_Reference>
+                            <wd:Completed_Date>2019-02-25T06:23:12.831-08:00</wd:Completed_Date>
+                            <wd:Due_Date>2019-03-04</wd:Due_Date>
+                            <wd:Workflow_Process_Participant_Reference wd:Descriptor="wd-implementer / Workday Implementer">
+                                <wd:ID wd:type="WID">64700e15a04847f6ac13343b007478e3</wd:ID>
+                                <wd:ID wd:type="System_User_ID">wd-implementer</wd:ID>
+                                <wd:ID wd:type="WorkdayUserName">wd-implementer</wd:ID>
+                            </wd:Workflow_Process_Participant_Reference>
+                        </wd:Process_History_Data>
+                        <wd:Remaining_Process_Data>
+                            <wd:Event_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 02">
+                                <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002902</wd:ID>
+                            </wd:Event_Reference>
+                        </wd:Remaining_Process_Data>
+                    </wd:Event_Detail_Data>
+                </wd:Event>
+                <wd:Event>
+                    <wd:Event_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 03">
+                        <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002903</wd:ID>
+                    </wd:Event_Reference>
+                    <wd:Event_Detail_Data>
+                        <wd:Creation_Date>2019-02-25T06:23:12.831-08:00</wd:Creation_Date>
+                        <wd:Due_Date>2019-03-04</wd:Due_Date>
+                        <wd:Completed_Date>2019-02-25T06:23:12.831-08:00</wd:Completed_Date>
+                        <wd:Event_State_Reference wd:Descriptor="Successfully Completed">
+                            <wd:ID wd:type="WID">b90bc51be01d4ae99b603b02b073714d</wd:ID>
+                        </wd:Event_State_Reference>
+                        <wd:Event_Target_Reference wd:Descriptor="Position - FirstName LastName ">
+                            <wd:ID wd:type="WID">abc35653991e40ab8429db0ba259a125</wd:ID>
+                            <wd:ID wd:type="Position_ID">P-00004</wd:ID>
+                        </wd:Event_Target_Reference>
+                        <wd:Initiating_Person_Reference wd:Descriptor="Workday Implementer">
+                            <wd:ID wd:type="WID">9432fb77379c493e89d55e12c24c949c</wd:ID>
+                        </wd:Initiating_Person_Reference>
+                        <wd:Process_History_Data>
+                            <wd:Process_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 03">
+                                <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002903</wd:ID>
+                            </wd:Process_Reference>
+                            <wd:Workflow_Step>
+                                <wd:Workflow_Step_Reference wd:Descriptor="Request One-Time Payment for 1000 Global Modern Services step a - Initiation">
+                                    <wd:ID wd:type="WID">1f4d8db58a4b46e5b5bc098fa2590e8d</wd:ID>
+                                    <wd:ID wd:type="Workflow_Step_ID">WORKFLOW_STEP-4-GMS-1384</wd:ID>
+                                </wd:Workflow_Step_Reference>
+                                <wd:Workflow_Step_Data>
+                                    <wd:Order>a</wd:Order>
+                                    <wd:Workflow_Step_Type_Reference wd:Descriptor="Initiation">
+                                        <wd:ID wd:type="WID">d8c892f4446c11de98360015c5e6daf6</wd:ID>
+                                        <wd:ID wd:type="Workflow_Step_Type_ID">INITIATION</wd:ID>
+                                    </wd:Workflow_Step_Type_Reference>
+                                </wd:Workflow_Step_Data>
+                            </wd:Workflow_Step>
+                            <wd:Status_Reference wd:Descriptor="Step Completed">
+                                <wd:ID wd:type="WID">d9e41366446c11de98360015c5e6daf6</wd:ID>
+                                <wd:ID wd:type="Event_Record_Action_Code">COMPLETE</wd:ID>
+                            </wd:Status_Reference>
+                            <wd:Completed_Date>2019-02-25T06:23:12.831-08:00</wd:Completed_Date>
+                            <wd:Due_Date>2019-03-04</wd:Due_Date>
+                            <wd:Workflow_Process_Participant_Reference wd:Descriptor="wd-implementer / Workday Implementer">
+                                <wd:ID wd:type="WID">64700e15a04847f6ac13343b007478e3</wd:ID>
+                                <wd:ID wd:type="System_User_ID">wd-implementer</wd:ID>
+                                <wd:ID wd:type="WorkdayUserName">wd-implementer</wd:ID>
+                            </wd:Workflow_Process_Participant_Reference>
+                        </wd:Process_History_Data>
+                        <wd:Remaining_Process_Data>
+                            <wd:Event_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 03">
+                                <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002903</wd:ID>
+                            </wd:Event_Reference>
+                        </wd:Remaining_Process_Data>
+                    </wd:Event_Detail_Data>
+                </wd:Event>
+                <wd:Event>
+                    <wd:Event_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 04">
+                        <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002904</wd:ID>
+                    </wd:Event_Reference>
+                    <wd:Event_Detail_Data>
+                        <wd:Creation_Date>2019-02-25T06:23:12.831-08:00</wd:Creation_Date>
+                        <wd:Due_Date>2019-03-04</wd:Due_Date>
+                        <wd:Completed_Date>2019-02-25T06:23:12.831-08:00</wd:Completed_Date>
+                        <wd:Event_State_Reference wd:Descriptor="Successfully Completed">
+                            <wd:ID wd:type="WID">b90bc51be01d4ae99b603b02b073714d</wd:ID>
+                        </wd:Event_State_Reference>
+                        <wd:Event_Target_Reference wd:Descriptor="Position - FirstName LastName ">
+                            <wd:ID wd:type="WID">abc35653991e40ab8429db0ba259a125</wd:ID>
+                            <wd:ID wd:type="Position_ID">P-00004</wd:ID>
+                        </wd:Event_Target_Reference>
+                        <wd:Initiating_Person_Reference wd:Descriptor="Workday Implementer">
+                            <wd:ID wd:type="WID">9432fb77379c493e89d55e12c24c949c</wd:ID>
+                        </wd:Initiating_Person_Reference>
+                        <wd:Process_History_Data>
+                            <wd:Process_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 04">
+                                <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002904</wd:ID>
+                            </wd:Process_Reference>
+                            <wd:Workflow_Step>
+                                <wd:Workflow_Step_Reference wd:Descriptor="Request One-Time Payment for 1000 Global Modern Services step a - Initiation">
+                                    <wd:ID wd:type="WID">1f4d8db58a4b46e5b5bc098fa2590e8d</wd:ID>
+                                    <wd:ID wd:type="Workflow_Step_ID">WORKFLOW_STEP-4-GMS-1384</wd:ID>
+                                </wd:Workflow_Step_Reference>
+                                <wd:Workflow_Step_Data>
+                                    <wd:Order>a</wd:Order>
+                                    <wd:Workflow_Step_Type_Reference wd:Descriptor="Initiation">
+                                        <wd:ID wd:type="WID">d8c892f4446c11de98360015c5e6daf6</wd:ID>
+                                        <wd:ID wd:type="Workflow_Step_Type_ID">INITIATION</wd:ID>
+                                    </wd:Workflow_Step_Type_Reference>
+                                </wd:Workflow_Step_Data>
+                            </wd:Workflow_Step>
+                            <wd:Status_Reference wd:Descriptor="Step Completed">
+                                <wd:ID wd:type="WID">d9e41366446c11de98360015c5e6daf6</wd:ID>
+                                <wd:ID wd:type="Event_Record_Action_Code">COMPLETE</wd:ID>
+                            </wd:Status_Reference>
+                            <wd:Completed_Date>2019-02-25T06:23:12.831-08:00</wd:Completed_Date>
+                            <wd:Due_Date>2019-03-04</wd:Due_Date>
+                            <wd:Workflow_Process_Participant_Reference wd:Descriptor="wd-implementer / Workday Implementer">
+                                <wd:ID wd:type="WID">64700e15a04847f6ac13343b007478e3</wd:ID>
+                                <wd:ID wd:type="System_User_ID">wd-implementer</wd:ID>
+                                <wd:ID wd:type="WorkdayUserName">wd-implementer</wd:ID>
+                            </wd:Workflow_Process_Participant_Reference>
+                        </wd:Process_History_Data>
+                        <wd:Remaining_Process_Data>
+                            <wd:Event_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 04">
+                                <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002904</wd:ID>
+                            </wd:Event_Reference>
+                        </wd:Remaining_Process_Data>
+                    </wd:Event_Detail_Data>
+                </wd:Event>
+                <wd:Event>
+                    <wd:Event_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 05">
+                        <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002905</wd:ID>
+                    </wd:Event_Reference>
+                    <wd:Event_Detail_Data>
+                        <wd:Creation_Date>2019-02-25T06:23:12.831-08:00</wd:Creation_Date>
+                        <wd:Due_Date>2019-03-04</wd:Due_Date>
+                        <wd:Completed_Date>2019-02-25T06:23:12.831-08:00</wd:Completed_Date>
+                        <wd:Event_State_Reference wd:Descriptor="Successfully Completed">
+                            <wd:ID wd:type="WID">b90bc51be01d4ae99b603b02b073714d</wd:ID>
+                        </wd:Event_State_Reference>
+                        <wd:Event_Target_Reference wd:Descriptor="Position - FirstName LastName ">
+                            <wd:ID wd:type="WID">abc35653991e40ab8429db0ba259a125</wd:ID>
+                            <wd:ID wd:type="Position_ID">P-00004</wd:ID>
+                        </wd:Event_Target_Reference>
+                        <wd:Initiating_Person_Reference wd:Descriptor="Workday Implementer">
+                            <wd:ID wd:type="WID">9432fb77379c493e89d55e12c24c949c</wd:ID>
+                        </wd:Initiating_Person_Reference>
+                        <wd:Process_History_Data>
+                            <wd:Process_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 05">
+                                <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002905</wd:ID>
+                            </wd:Process_Reference>
+                            <wd:Workflow_Step>
+                                <wd:Workflow_Step_Reference wd:Descriptor="Request One-Time Payment for 1000 Global Modern Services step a - Initiation">
+                                    <wd:ID wd:type="WID">1f4d8db58a4b46e5b5bc098fa2590e8d</wd:ID>
+                                    <wd:ID wd:type="Workflow_Step_ID">WORKFLOW_STEP-4-GMS-1384</wd:ID>
+                                </wd:Workflow_Step_Reference>
+                                <wd:Workflow_Step_Data>
+                                    <wd:Order>a</wd:Order>
+                                    <wd:Workflow_Step_Type_Reference wd:Descriptor="Initiation">
+                                        <wd:ID wd:type="WID">d8c892f4446c11de98360015c5e6daf6</wd:ID>
+                                        <wd:ID wd:type="Workflow_Step_Type_ID">INITIATION</wd:ID>
+                                    </wd:Workflow_Step_Type_Reference>
+                                </wd:Workflow_Step_Data>
+                            </wd:Workflow_Step>
+                            <wd:Status_Reference wd:Descriptor="Step Completed">
+                                <wd:ID wd:type="WID">d9e41366446c11de98360015c5e6daf6</wd:ID>
+                                <wd:ID wd:type="Event_Record_Action_Code">COMPLETE</wd:ID>
+                            </wd:Status_Reference>
+                            <wd:Completed_Date>2019-02-25T06:23:12.831-08:00</wd:Completed_Date>
+                            <wd:Due_Date>2019-03-04</wd:Due_Date>
+                            <wd:Workflow_Process_Participant_Reference wd:Descriptor="wd-implementer / Workday Implementer">
+                                <wd:ID wd:type="WID">64700e15a04847f6ac13343b007478e3</wd:ID>
+                                <wd:ID wd:type="System_User_ID">wd-implementer</wd:ID>
+                                <wd:ID wd:type="WorkdayUserName">wd-implementer</wd:ID>
+                            </wd:Workflow_Process_Participant_Reference>
+                        </wd:Process_History_Data>
+                        <wd:Remaining_Process_Data>
+                            <wd:Event_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 05">
+                                <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002905</wd:ID>
+                            </wd:Event_Reference>
+                        </wd:Remaining_Process_Data>
+                    </wd:Event_Detail_Data>
+                </wd:Event>
+                <wd:Event>
+                    <wd:Event_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 06">
+                        <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002906</wd:ID>
+                    </wd:Event_Reference>
+                    <wd:Event_Detail_Data>
+                        <wd:Creation_Date>2019-02-25T06:23:12.831-08:00</wd:Creation_Date>
+                        <wd:Due_Date>2019-03-04</wd:Due_Date>
+                        <wd:Completed_Date>2019-02-25T06:23:12.831-08:00</wd:Completed_Date>
+                        <wd:Event_State_Reference wd:Descriptor="Successfully Completed">
+                            <wd:ID wd:type="WID">b90bc51be01d4ae99b603b02b073714d</wd:ID>
+                        </wd:Event_State_Reference>
+                        <wd:Event_Target_Reference wd:Descriptor="Position - FirstName LastName ">
+                            <wd:ID wd:type="WID">abc35653991e40ab8429db0ba259a125</wd:ID>
+                            <wd:ID wd:type="Position_ID">P-00004</wd:ID>
+                        </wd:Event_Target_Reference>
+                        <wd:Initiating_Person_Reference wd:Descriptor="Workday Implementer">
+                            <wd:ID wd:type="WID">9432fb77379c493e89d55e12c24c949c</wd:ID>
+                        </wd:Initiating_Person_Reference>
+                        <wd:Process_History_Data>
+                            <wd:Process_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 06">
+                                <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002906</wd:ID>
+                            </wd:Process_Reference>
+                            <wd:Workflow_Step>
+                                <wd:Workflow_Step_Reference wd:Descriptor="Request One-Time Payment for 1000 Global Modern Services step a - Initiation">
+                                    <wd:ID wd:type="WID">1f4d8db58a4b46e5b5bc098fa2590e8d</wd:ID>
+                                    <wd:ID wd:type="Workflow_Step_ID">WORKFLOW_STEP-4-GMS-1384</wd:ID>
+                                </wd:Workflow_Step_Reference>
+                                <wd:Workflow_Step_Data>
+                                    <wd:Order>a</wd:Order>
+                                    <wd:Workflow_Step_Type_Reference wd:Descriptor="Initiation">
+                                        <wd:ID wd:type="WID">d8c892f4446c11de98360015c5e6daf6</wd:ID>
+                                        <wd:ID wd:type="Workflow_Step_Type_ID">INITIATION</wd:ID>
+                                    </wd:Workflow_Step_Type_Reference>
+                                </wd:Workflow_Step_Data>
+                            </wd:Workflow_Step>
+                            <wd:Status_Reference wd:Descriptor="Step Completed">
+                                <wd:ID wd:type="WID">d9e41366446c11de98360015c5e6daf6</wd:ID>
+                                <wd:ID wd:type="Event_Record_Action_Code">COMPLETE</wd:ID>
+                            </wd:Status_Reference>
+                            <wd:Completed_Date>2019-02-25T06:23:12.831-08:00</wd:Completed_Date>
+                            <wd:Due_Date>2019-03-04</wd:Due_Date>
+                            <wd:Workflow_Process_Participant_Reference wd:Descriptor="wd-implementer / Workday Implementer">
+                                <wd:ID wd:type="WID">64700e15a04847f6ac13343b007478e3</wd:ID>
+                                <wd:ID wd:type="System_User_ID">wd-implementer</wd:ID>
+                                <wd:ID wd:type="WorkdayUserName">wd-implementer</wd:ID>
+                            </wd:Workflow_Process_Participant_Reference>
+                        </wd:Process_History_Data>
+                        <wd:Remaining_Process_Data>
+                            <wd:Event_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 06">
+                                <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002906</wd:ID>
+                            </wd:Event_Reference>
+                        </wd:Remaining_Process_Data>
+                    </wd:Event_Detail_Data>
+                </wd:Event>
+                <wd:Event>
+                    <wd:Event_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 07">
+                        <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002907</wd:ID>
+                    </wd:Event_Reference>
+                    <wd:Event_Detail_Data>
+                        <wd:Creation_Date>2019-02-25T06:23:12.831-08:00</wd:Creation_Date>
+                        <wd:Due_Date>2019-03-04</wd:Due_Date>
+                        <wd:Completed_Date>2019-02-25T06:23:12.831-08:00</wd:Completed_Date>
+                        <wd:Event_State_Reference wd:Descriptor="Successfully Completed">
+                            <wd:ID wd:type="WID">b90bc51be01d4ae99b603b02b073714d</wd:ID>
+                        </wd:Event_State_Reference>
+                        <wd:Event_Target_Reference wd:Descriptor="Position - FirstName LastName ">
+                            <wd:ID wd:type="WID">abc35653991e40ab8429db0ba259a125</wd:ID>
+                            <wd:ID wd:type="Position_ID">P-00004</wd:ID>
+                        </wd:Event_Target_Reference>
+                        <wd:Initiating_Person_Reference wd:Descriptor="Workday Implementer">
+                            <wd:ID wd:type="WID">9432fb77379c493e89d55e12c24c949c</wd:ID>
+                        </wd:Initiating_Person_Reference>
+                        <wd:Process_History_Data>
+                            <wd:Process_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 07">
+                                <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002907</wd:ID>
+                            </wd:Process_Reference>
+                            <wd:Workflow_Step>
+                                <wd:Workflow_Step_Reference wd:Descriptor="Request One-Time Payment for 1000 Global Modern Services step a - Initiation">
+                                    <wd:ID wd:type="WID">1f4d8db58a4b46e5b5bc098fa2590e8d</wd:ID>
+                                    <wd:ID wd:type="Workflow_Step_ID">WORKFLOW_STEP-4-GMS-1384</wd:ID>
+                                </wd:Workflow_Step_Reference>
+                                <wd:Workflow_Step_Data>
+                                    <wd:Order>a</wd:Order>
+                                    <wd:Workflow_Step_Type_Reference wd:Descriptor="Initiation">
+                                        <wd:ID wd:type="WID">d8c892f4446c11de98360015c5e6daf6</wd:ID>
+                                        <wd:ID wd:type="Workflow_Step_Type_ID">INITIATION</wd:ID>
+                                    </wd:Workflow_Step_Type_Reference>
+                                </wd:Workflow_Step_Data>
+                            </wd:Workflow_Step>
+                            <wd:Status_Reference wd:Descriptor="Step Completed">
+                                <wd:ID wd:type="WID">d9e41366446c11de98360015c5e6daf6</wd:ID>
+                                <wd:ID wd:type="Event_Record_Action_Code">COMPLETE</wd:ID>
+                            </wd:Status_Reference>
+                            <wd:Completed_Date>2019-02-25T06:23:12.831-08:00</wd:Completed_Date>
+                            <wd:Due_Date>2019-03-04</wd:Due_Date>
+                            <wd:Workflow_Process_Participant_Reference wd:Descriptor="wd-implementer / Workday Implementer">
+                                <wd:ID wd:type="WID">64700e15a04847f6ac13343b007478e3</wd:ID>
+                                <wd:ID wd:type="System_User_ID">wd-implementer</wd:ID>
+                                <wd:ID wd:type="WorkdayUserName">wd-implementer</wd:ID>
+                            </wd:Workflow_Process_Participant_Reference>
+                        </wd:Process_History_Data>
+                        <wd:Remaining_Process_Data>
+                            <wd:Event_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 07">
+                                <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002907</wd:ID>
+                            </wd:Event_Reference>
+                        </wd:Remaining_Process_Data>
+                    </wd:Event_Detail_Data>
+                </wd:Event>
+                <wd:Event>
+                    <wd:Event_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 08">
+                        <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002908</wd:ID>
+                    </wd:Event_Reference>
+                    <wd:Event_Detail_Data>
+                        <wd:Creation_Date>2019-02-25T06:23:12.831-08:00</wd:Creation_Date>
+                        <wd:Due_Date>2019-03-04</wd:Due_Date>
+                        <wd:Completed_Date>2019-02-25T06:23:12.831-08:00</wd:Completed_Date>
+                        <wd:Event_State_Reference wd:Descriptor="Successfully Completed">
+                            <wd:ID wd:type="WID">b90bc51be01d4ae99b603b02b073714d</wd:ID>
+                        </wd:Event_State_Reference>
+                        <wd:Event_Target_Reference wd:Descriptor="Position - FirstName LastName ">
+                            <wd:ID wd:type="WID">abc35653991e40ab8429db0ba259a125</wd:ID>
+                            <wd:ID wd:type="Position_ID">P-00004</wd:ID>
+                        </wd:Event_Target_Reference>
+                        <wd:Initiating_Person_Reference wd:Descriptor="Workday Implementer">
+                            <wd:ID wd:type="WID">9432fb77379c493e89d55e12c24c949c</wd:ID>
+                        </wd:Initiating_Person_Reference>
+                        <wd:Process_History_Data>
+                            <wd:Process_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 08">
+                                <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002908</wd:ID>
+                            </wd:Process_Reference>
+                            <wd:Workflow_Step>
+                                <wd:Workflow_Step_Reference wd:Descriptor="Request One-Time Payment for 1000 Global Modern Services step a - Initiation">
+                                    <wd:ID wd:type="WID">1f4d8db58a4b46e5b5bc098fa2590e8d</wd:ID>
+                                    <wd:ID wd:type="Workflow_Step_ID">WORKFLOW_STEP-4-GMS-1384</wd:ID>
+                                </wd:Workflow_Step_Reference>
+                                <wd:Workflow_Step_Data>
+                                    <wd:Order>a</wd:Order>
+                                    <wd:Workflow_Step_Type_Reference wd:Descriptor="Initiation">
+                                        <wd:ID wd:type="WID">d8c892f4446c11de98360015c5e6daf6</wd:ID>
+                                        <wd:ID wd:type="Workflow_Step_Type_ID">INITIATION</wd:ID>
+                                    </wd:Workflow_Step_Type_Reference>
+                                </wd:Workflow_Step_Data>
+                            </wd:Workflow_Step>
+                            <wd:Status_Reference wd:Descriptor="Step Completed">
+                                <wd:ID wd:type="WID">d9e41366446c11de98360015c5e6daf6</wd:ID>
+                                <wd:ID wd:type="Event_Record_Action_Code">COMPLETE</wd:ID>
+                            </wd:Status_Reference>
+                            <wd:Completed_Date>2019-02-25T06:23:12.831-08:00</wd:Completed_Date>
+                            <wd:Due_Date>2019-03-04</wd:Due_Date>
+                            <wd:Workflow_Process_Participant_Reference wd:Descriptor="wd-implementer / Workday Implementer">
+                                <wd:ID wd:type="WID">64700e15a04847f6ac13343b007478e3</wd:ID>
+                                <wd:ID wd:type="System_User_ID">wd-implementer</wd:ID>
+                                <wd:ID wd:type="WorkdayUserName">wd-implementer</wd:ID>
+                            </wd:Workflow_Process_Participant_Reference>
+                        </wd:Process_History_Data>
+                        <wd:Remaining_Process_Data>
+                            <wd:Event_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 08">
+                                <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002908</wd:ID>
+                            </wd:Event_Reference>
+                        </wd:Remaining_Process_Data>
+                    </wd:Event_Detail_Data>
+                </wd:Event>
+                <wd:Event>
+                    <wd:Event_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 09">
+                        <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002909</wd:ID>
+                    </wd:Event_Reference>
+                    <wd:Event_Detail_Data>
+                        <wd:Creation_Date>2019-02-25T06:23:12.831-08:00</wd:Creation_Date>
+                        <wd:Due_Date>2019-03-04</wd:Due_Date>
+                        <wd:Completed_Date>2019-02-25T06:23:12.831-08:00</wd:Completed_Date>
+                        <wd:Event_State_Reference wd:Descriptor="Successfully Completed">
+                            <wd:ID wd:type="WID">b90bc51be01d4ae99b603b02b073714d</wd:ID>
+                        </wd:Event_State_Reference>
+                        <wd:Event_Target_Reference wd:Descriptor="Position - FirstName LastName ">
+                            <wd:ID wd:type="WID">abc35653991e40ab8429db0ba259a125</wd:ID>
+                            <wd:ID wd:type="Position_ID">P-00004</wd:ID>
+                        </wd:Event_Target_Reference>
+                        <wd:Initiating_Person_Reference wd:Descriptor="Workday Implementer">
+                            <wd:ID wd:type="WID">9432fb77379c493e89d55e12c24c949c</wd:ID>
+                        </wd:Initiating_Person_Reference>
+                        <wd:Process_History_Data>
+                            <wd:Process_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 09">
+                                <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002909</wd:ID>
+                            </wd:Process_Reference>
+                            <wd:Workflow_Step>
+                                <wd:Workflow_Step_Reference wd:Descriptor="Request One-Time Payment for 1000 Global Modern Services step a - Initiation">
+                                    <wd:ID wd:type="WID">1f4d8db58a4b46e5b5bc098fa2590e8d</wd:ID>
+                                    <wd:ID wd:type="Workflow_Step_ID">WORKFLOW_STEP-4-GMS-1384</wd:ID>
+                                </wd:Workflow_Step_Reference>
+                                <wd:Workflow_Step_Data>
+                                    <wd:Order>a</wd:Order>
+                                    <wd:Workflow_Step_Type_Reference wd:Descriptor="Initiation">
+                                        <wd:ID wd:type="WID">d8c892f4446c11de98360015c5e6daf6</wd:ID>
+                                        <wd:ID wd:type="Workflow_Step_Type_ID">INITIATION</wd:ID>
+                                    </wd:Workflow_Step_Type_Reference>
+                                </wd:Workflow_Step_Data>
+                            </wd:Workflow_Step>
+                            <wd:Status_Reference wd:Descriptor="Step Completed">
+                                <wd:ID wd:type="WID">d9e41366446c11de98360015c5e6daf6</wd:ID>
+                                <wd:ID wd:type="Event_Record_Action_Code">COMPLETE</wd:ID>
+                            </wd:Status_Reference>
+                            <wd:Completed_Date>2019-02-25T06:23:12.831-08:00</wd:Completed_Date>
+                            <wd:Due_Date>2019-03-04</wd:Due_Date>
+                            <wd:Workflow_Process_Participant_Reference wd:Descriptor="wd-implementer / Workday Implementer">
+                                <wd:ID wd:type="WID">64700e15a04847f6ac13343b007478e3</wd:ID>
+                                <wd:ID wd:type="System_User_ID">wd-implementer</wd:ID>
+                                <wd:ID wd:type="WorkdayUserName">wd-implementer</wd:ID>
+                            </wd:Workflow_Process_Participant_Reference>
+                        </wd:Process_History_Data>
+                        <wd:Remaining_Process_Data>
+                            <wd:Event_Reference wd:Descriptor="One-Time Payment: FirstName LastName - Position 09">
+                                <wd:ID wd:type="WID">c70f8c5b5c0d019352f2de8c02002909</wd:ID>
+                            </wd:Event_Reference>
+                        </wd:Remaining_Process_Data>
+                    </wd:Event_Detail_Data>
+                </wd:Event>
+            </wd:Response_Data>
+        </wd:Get_Event_Details_Response>
+    </env:Body>
+</env:Envelope>

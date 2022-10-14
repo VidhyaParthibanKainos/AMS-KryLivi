@@ -1,0 +1,407 @@
+<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+   <env:Body>
+      <wd:Get_Integration_Systems_Response wd:version="v33.0" xmlns:wd="urn:com.workday/bsvc">
+         <wd:Request_References>
+            <wd:Integration_System_Reference wd:Descriptor="int006 Greenhouse Inbound">
+               <wd:ID wd:type="WID">dbb3d228e98d015a9bf2f62b71435b4f</wd:ID>
+               <wd:ID wd:type="Integration_System_ID">int006_Greenhouse_Inbound_Collection/int006_Greenhouse_Inbound/StartHere</wd:ID>
+            </wd:Integration_System_Reference>
+         </wd:Request_References>
+         <wd:Response_Group>
+            <wd:Include_Reference>1</wd:Include_Reference>
+            <wd:Show_Values_For_All_Environments>1</wd:Show_Values_For_All_Environments>
+         </wd:Response_Group>
+         <wd:Response_Results>
+            <wd:Total_Results>1</wd:Total_Results>
+            <wd:Total_Pages>1</wd:Total_Pages>
+            <wd:Page_Results>1</wd:Page_Results>
+            <wd:Page>1</wd:Page>
+         </wd:Response_Results>
+         <wd:Response_Data>
+            <wd:Integration_System>
+               <wd:Integration_System_Reference wd:Descriptor="int006 Greenhouse Inbound">
+                  <wd:ID wd:type="WID">dbb3d228e98d015a9bf2f62b71435b4f</wd:ID>
+                  <wd:ID wd:type="Integration_System_ID">int006_Greenhouse_Inbound_Collection/int006_Greenhouse_Inbound/StartHere</wd:ID>
+               </wd:Integration_System_Reference>
+               <wd:Integration_System_Data>
+                  <wd:Integration_System_ID>int006_Greenhouse_Inbound_Collection/int006_Greenhouse_Inbound/StartHere</wd:Integration_System_ID>
+                  <wd:Integration_System_Name>int006 Greenhouse Inbound</wd:Integration_System_Name>
+                  <wd:Integration_Template_Reference wd:Descriptor="Cloud Integration Template">
+                     <wd:ID wd:type="WID">ce31b92bca0144ab8db330a07b0912fe</wd:ID>
+                     <wd:ID wd:type="Integration_Template_Name">Cloud Integration Template</wd:ID>
+                  </wd:Integration_Template_Reference>
+                  <wd:Integration_Service_Data wd:WID="dbb3d228e98d017d9699f72b7143604f" wd:Enabled="1">
+                     <wd:Integration_Service_Reference wd:Descriptor="Cloud Integration Broker">
+                        <wd:ID wd:type="WID">641a9b60ac0a4801bed461ac01c5c316</wd:ID>
+                        <wd:ID wd:type="Workday_Integration_Service_Name">Cloud Integration Broker</wd:ID>
+                     </wd:Integration_Service_Reference>
+                  </wd:Integration_Service_Data>
+                  <wd:Integration_Service_Data wd:WID="dbb3d228e98d01a62b55f72b71435e4f" wd:Enabled="1">
+                     <wd:Integration_Service_Reference wd:Descriptor="int006 Greenhouse Inbound Attribute Map Service - Functional">
+                        <wd:ID wd:type="WID">cc16087d57d801b288ba5dfba8345537</wd:ID>
+                        <wd:ID wd:type="Integration_Service_Name">int006 Greenhouse Inbound Attribute Map Service - Functional</wd:ID>
+                     </wd:Integration_Service_Reference>
+                  </wd:Integration_Service_Data>
+                  <wd:Integration_Service_Data wd:WID="dbb3d228e98d01802d18f72b71435c4f" wd:Enabled="1">
+                     <wd:Integration_Service_Reference wd:Descriptor="int006 Greenhouse Inbound Attribute Map Service - General">
+                        <wd:ID wd:type="WID">cc16087d57d8015dbf8d3dfba8344f37</wd:ID>
+                        <wd:ID wd:type="Integration_Service_Name">int006 Greenhouse Inbound Attribute Map Service - General</wd:ID>
+                     </wd:Integration_Service_Reference>
+                  </wd:Integration_Service_Data>
+                  <wd:Integration_Service_Data wd:WID="028cd895a444013f74cea99aaa1e7307" wd:Enabled="1">
+                     <wd:Integration_Service_Reference wd:Descriptor="int006 Greenhouse Inbound Attribute Map Service - Message Queue">
+                        <wd:ID wd:type="WID">028cd895a44401b6f6bc819aaa1e6907</wd:ID>
+                        <wd:ID wd:type="Integration_Service_Name">int006 Greenhouse Inbound Attribute Map Service - Message Queue</wd:ID>
+                     </wd:Integration_Service_Reference>
+                  </wd:Integration_Service_Data>
+                  <wd:Integration_Service_Data wd:WID="028cd895a4440119f17ca99aaa1e7107" wd:Enabled="1">
+                     <wd:Integration_Service_Reference wd:Descriptor="int006 Greenhouse Inbound Attribute Map Service - Primary Logging">
+                        <wd:ID wd:type="WID">028cd895a4440170a7e7fd99aa1e5b07</wd:ID>
+                        <wd:ID wd:type="Integration_Service_Name">int006 Greenhouse Inbound Attribute Map Service - Primary Logging</wd:ID>
+                     </wd:Integration_Service_Reference>
+                  </wd:Integration_Service_Data>
+                  <wd:Integration_Service_Data wd:WID="028cd895a44401729da4a99aaa1e7207" wd:Enabled="1">
+                     <wd:Integration_Service_Reference wd:Descriptor="int006 Greenhouse Inbound Attribute Map Service - Secondary Logging">
+                        <wd:ID wd:type="WID">028cd895a444010f6e5a189aaa1e6007</wd:ID>
+                        <wd:ID wd:type="Integration_Service_Name">int006 Greenhouse Inbound Attribute Map Service - Secondary Logging</wd:ID>
+                     </wd:Integration_Service_Reference>
+                  </wd:Integration_Service_Data>
+                  <wd:Integration_Service_Data wd:WID="315650fb566d0132eff5d41309007500" wd:Enabled="1">
+                     <wd:Integration_Service_Reference wd:Descriptor="int006 Greenhouse Inbound Custom Object Service">
+                        <wd:ID wd:type="WID">315650fb566d01031c74961309007000</wd:ID>
+                        <wd:ID wd:type="Integration_Service_Name">int006 Greenhouse Inbound Custom Object Service</wd:ID>
+                     </wd:Integration_Service_Reference>
+                     <wd:Integration_Custom_Object_Configuration_Data>
+                        <wd:Integration_Custom_Object_Alias_Configuration_Data>
+                           <wd:Custom_Object_Alias_Reference wd:Descriptor="int006 Greenhouse Inbound Custom Object Service / spouseService">
+                              <wd:ID wd:type="WID">315650fb566d01d829871add09007a00</wd:ID>
+                              <wd:ID wd:type="Integration_Document_Field_Name" wd:parent_type="Integration_Document_Name" wd:parent_id="int006 Greenhouse Inbound Custom Object Service">spouseService</wd:ID>
+                           </wd:Custom_Object_Alias_Reference>
+                           <wd:Custom_Object_Reference wd:Descriptor="Spouse">
+                              <wd:ID wd:type="WID">a2a72fda699a1000939d8467a930ff81</wd:ID>
+                              <wd:ID wd:type="Custom_Object_ID">spouse</wd:ID>
+                              <wd:ID wd:type="Custom_Object_Definition_ID">spouse</wd:ID>
+                           </wd:Custom_Object_Reference>
+                           <wd:Capture_Multiple_Values>0</wd:Capture_Multiple_Values>
+                           <wd:Custom_Object_REST_URL>https://wd2-impl-services1.workday.com/ccx/api/v1/testTenant/customObjects/spouse</wd:Custom_Object_REST_URL>
+                           <wd:Multiple_Custom_Object_REST_URL>https://wd2-impl-services1.workday.com/ccx/api/v1/testTenant/{extendedBusinessObjectAlias}/{extendedBusinessObjectID}/customObjects/spouse</wd:Multiple_Custom_Object_REST_URL>
+                        </wd:Integration_Custom_Object_Alias_Configuration_Data>
+                        <wd:Integration_Custom_Object_Alias_Configuration_Data>
+                           <wd:Custom_Object_Alias_Reference wd:Descriptor="int006 Greenhouse Inbound Custom Object Service / shoesService">
+                              <wd:ID wd:type="WID">315650fb566d0196a824971309007200</wd:ID>
+                              <wd:ID wd:type="Integration_Document_Field_Name" wd:parent_type="Integration_Document_Name" wd:parent_id="int006 Greenhouse Inbound Custom Object Service">shoesService</wd:ID>
+                           </wd:Custom_Object_Alias_Reference>
+                           <wd:Custom_Object_Reference wd:Descriptor="Shoes">
+                              <wd:ID wd:type="WID">0f83393106a3102d42f4ef066f25042d</wd:ID>
+                              <wd:ID wd:type="Custom_Object_ID">shoes</wd:ID>
+                              <wd:ID wd:type="Custom_Object_Definition_ID">shoes</wd:ID>
+                           </wd:Custom_Object_Reference>
+                           <wd:Capture_Multiple_Values>1</wd:Capture_Multiple_Values>
+                           <wd:Custom_Object_REST_URL>https://wd2-impl-services1.workday.com/ccx/api/v1/testTenant/customObjects/shoes</wd:Custom_Object_REST_URL>
+                           <wd:Multiple_Custom_Object_REST_URL>https://wd2-impl-services1.workday.com/ccx/api/v1/testTenant/{extendedBusinessObjectAlias}/{extendedBusinessObjectID}/customObjects/shoes</wd:Multiple_Custom_Object_REST_URL>
+                        </wd:Integration_Custom_Object_Alias_Configuration_Data>
+                     </wd:Integration_Custom_Object_Configuration_Data>
+                  </wd:Integration_Service_Data>
+                  <wd:Integration_Service_Data wd:WID="db4a4ac4276c01155de9ef2209007200" wd:Enabled="1">
+                     <wd:Integration_Service_Reference wd:Descriptor="int006 Greenhouse Inbound Report Service">
+                        <wd:ID wd:type="WID">db4a4ac4276c013a3835cc2209006700</wd:ID>
+                        <wd:ID wd:type="Integration_Service_Name">int006 Greenhouse Inbound Report Service</wd:ID>
+                     </wd:Integration_Service_Reference>
+                     <wd:Integration_Report_Service_Configuration_Data>
+                        <wd:Integration_Report_Field_Configuration_Data>
+                           <wd:Report_Alias_Reference wd:Descriptor="int006 Greenhouse Inbound Report Service / Worker Data">
+                              <wd:ID wd:type="WID">db4a4ac4276c01a4e693cd2209006900</wd:ID>
+                              <wd:ID wd:type="Integration_Document_Field_Name" wd:parent_type="Integration_Document_Name" wd:parent_id="int006 Greenhouse Inbound Report Service">Worker Data</wd:ID>
+                           </wd:Report_Alias_Reference>
+                           <wd:Custom_Report_Definition_Reference wd:Descriptor="CR INT Worker Data">
+                              <wd:ID wd:type="WID">db4a4ac4276c0183d8bead0e0a008800</wd:ID>
+                              <wd:ID wd:type="Custom_Report_ID" wd:parent_type="System_User_ID" wd:parent_id="ISU_INT">CR INT Worker Data</wd:ID>
+                           </wd:Custom_Report_Definition_Reference>
+                           <wd:REST_Endpoint>https://wd2-impl-services1.workday.com/ccx/service/customreport2/testTenant/ISU_INT/CR_INT_Worker_Data</wd:REST_Endpoint>
+                        </wd:Integration_Report_Field_Configuration_Data>
+                     </wd:Integration_Report_Service_Configuration_Data>
+                  </wd:Integration_Service_Data>
+                  <wd:Integration_Attributes_Data>
+                     <wd:Integration_Attribute_Provider_Reference wd:Descriptor="Cloud Integration Broker">
+                        <wd:ID wd:type="Workday_Integration_Service_Name">Cloud Integration Broker</wd:ID>
+                        <wd:ID wd:type="WID">641a9b60ac0a4801bed461ac01c5c316</wd:ID>
+                     </wd:Integration_Attribute_Provider_Reference>
+                     <wd:Integration_Attribute_Data>
+                        <wd:Integration_Attribute_Reference wd:Descriptor="Cloud Integration Broker / WorkdayIn Connector ID">
+                           <wd:ID wd:parent_id="Cloud Integration Broker" wd:parent_type="Workday_Integration_Service_Name" wd:type="Workday_Integration_Attribute_Name">WorkdayIn Connector ID</wd:ID>
+                           <wd:ID wd:parent_id="641a9b60ac0a4801bed461ac01c5c316" wd:parent_type="WID" wd:type="Workday_Integration_Attribute_Name">WorkdayIn Connector ID</wd:ID>
+                           <wd:ID wd:type="WID">eae8e3ee27fc43b580097fd284f168aa</wd:ID>
+                        </wd:Integration_Attribute_Reference>
+                        <wd:Integration_Attribute_Name>WorkdayIn Connector ID</wd:Integration_Attribute_Name>
+                        <wd:Integration_Attribute_Value_Data>
+                           <wd:Text>int006_Greenhouse_Inbound/StartHere</wd:Text>
+                        </wd:Integration_Attribute_Value_Data>
+                     </wd:Integration_Attribute_Data>
+                  </wd:Integration_Attributes_Data>
+
+                  <wd:Integration_Attributes_Data>
+                     <wd:Integration_Attribute_Provider_Reference wd:Descriptor="int006 Greenhouse Inbound Attribute Map Service - Functional">
+                        <wd:ID wd:type="Integration_Service_Name">int006 Greenhouse Inbound Attribute Map Service - Functional</wd:ID>
+                        <wd:ID wd:type="WID">cc16087d57d801b288ba5dfba8345537</wd:ID>
+                     </wd:Integration_Attribute_Provider_Reference>
+                     <wd:Integration_Attribute_Data>
+                        <wd:Integration_Attribute_Reference wd:Descriptor="int006 Greenhouse Inbound Attribute Map Service - Functional / Output File Name (Include File Extension)">
+                           <wd:ID wd:parent_id="int006 Greenhouse Inbound Attribute Map Service - Functional" wd:parent_type="Integration_Service_Name" wd:type="Integration_Attribute_Name">Output File Name (Include File Extension)</wd:ID>
+                           <wd:ID wd:parent_id="cc16087d57d801b288ba5dfba8345537" wd:parent_type="WID" wd:type="Integration_Attribute_Name">Output File Name (Include File Extension)</wd:ID>
+                           <wd:ID wd:type="WID">028cd895a44401f30b38329aaa1e6507</wd:ID>
+                        </wd:Integration_Attribute_Reference>
+                        <wd:Integration_Attribute_Name>Output File Name (Include File Extension)</wd:Integration_Attribute_Name>
+                        <wd:Integration_Attribute_Value_Data>
+                           <wd:Text>INT_Results.txt</wd:Text>
+                        </wd:Integration_Attribute_Value_Data>
+                     </wd:Integration_Attribute_Data>
+                     <wd:Integration_Attribute_Data>
+                        <wd:Integration_Attribute_Reference wd:Descriptor="int006 Greenhouse Inbound Attribute Map Service - Functional / Delivery Document Tag(s)">
+                           <wd:ID wd:parent_id="int006 Greenhouse Inbound Attribute Map Service - Functional" wd:parent_type="Integration_Service_Name" wd:type="Integration_Attribute_Name">Delivery Document Tag(s)</wd:ID>
+                           <wd:ID wd:parent_id="cc16087d57d801b288ba5dfba8345537" wd:parent_type="WID" wd:type="Integration_Attribute_Name">Delivery Document Tag(s)</wd:ID>
+                           <wd:ID wd:type="WID">028cd895a44401f3eb48329aaa1e6607</wd:ID>
+                        </wd:Integration_Attribute_Reference>
+                        <wd:Integration_Attribute_Name>Delivery Document Tag(s)</wd:Integration_Attribute_Name>
+                        <wd:Integration_Attribute_Value_Data>
+                           <wd:Text>INT_DocTag,INT_Output</wd:Text>
+                           <wd:Instance_Reference wd:Descriptor="INT_DocTag">
+                              <wd:ID wd:type="WID">028cd895a44401e6a11eadc1aa1e7507</wd:ID>
+                              <wd:ID wd:type="Document_Tag_Name">INT_DocTag</wd:ID>
+                           </wd:Instance_Reference>
+                           <wd:Instance_Reference wd:Descriptor="INT_Output">
+                              <wd:ID wd:type="WID">72bc967eb50f0152da3dc8b06f120c62</wd:ID>
+                              <wd:ID wd:type="Document_Tag_Name">INT_Output</wd:ID>
+                           </wd:Instance_Reference>
+                        </wd:Integration_Attribute_Value_Data>
+                     </wd:Integration_Attribute_Data>
+                     <wd:Integration_Attribute_Data>
+                        <wd:Integration_Attribute_Reference wd:Descriptor="int006 Greenhouse Inbound Attribute Map Service - Functional / Retrieval Document Tag(s)">
+                           <wd:ID wd:parent_id="int006 Greenhouse Inbound Attribute Map Service - Functional" wd:parent_type="Integration_Service_Name" wd:type="Integration_Attribute_Name">Retrieval Document Tag(s)</wd:ID>
+                           <wd:ID wd:parent_id="cc16087d57d801b288ba5dfba8345537" wd:parent_type="WID" wd:type="Integration_Attribute_Name">Retrieval Document Tag(s)</wd:ID>
+                           <wd:ID wd:type="WID">028cd895a4440176b26d329aaa1e6707</wd:ID>
+                        </wd:Integration_Attribute_Reference>
+                        <wd:Integration_Attribute_Name>Retrieval Document Tag(s)</wd:Integration_Attribute_Name>
+                        <wd:Integration_Attribute_Value_Data>
+                           <wd:Text>Retrieved</wd:Text>
+                           <wd:Instance_Reference wd:Descriptor="Retrieved">
+                              <wd:ID wd:type="WID">b2f7dfe1c41a41c89a358318b28d6e1c</wd:ID>
+                              <wd:ID wd:type="Workday_Document_Tag_Name">Retrieved</wd:ID>
+                           </wd:Instance_Reference>
+                        </wd:Integration_Attribute_Value_Data>
+                     </wd:Integration_Attribute_Data>
+                     <wd:Integration_Attribute_Data>
+                        <wd:Integration_Attribute_Reference wd:Descriptor="int006 Greenhouse Inbound Attribute Map Service - Functional / Retrieval Document Tag Match Strategy">
+                           <wd:ID wd:parent_id="int006 Greenhouse Inbound Attribute Map Service - Functional" wd:parent_type="Integration_Service_Name" wd:type="Integration_Attribute_Name">Retrieval Document Tag Match Strategy</wd:ID>
+                           <wd:ID wd:parent_id="cc16087d57d801b288ba5dfba8345537" wd:parent_type="WID" wd:type="Integration_Attribute_Name">Retrieval Document Tag Match Strategy</wd:ID>
+                           <wd:ID wd:type="WID">028cd895a44401a7fe7a329aaa1e6807</wd:ID>
+                        </wd:Integration_Attribute_Reference>
+                        <wd:Integration_Attribute_Name>Retrieval Document Tag Match Strategy</wd:Integration_Attribute_Name>
+                        <wd:Integration_Attribute_Value_Data>
+                           <wd:Text>All</wd:Text>
+                        </wd:Integration_Attribute_Value_Data>
+                     </wd:Integration_Attribute_Data>
+                  </wd:Integration_Attributes_Data>
+
+                  <wd:Integration_Attributes_Data>
+                     <wd:Integration_Attribute_Provider_Reference wd:Descriptor="int006 Greenhouse Inbound Attribute Map Service - General">
+                        <wd:ID wd:type="Integration_Service_Name">int006 Greenhouse Inbound Attribute Map Service - General</wd:ID>
+                        <wd:ID wd:type="WID">cc16087d57d8015dbf8d3dfba8344f37</wd:ID>
+                     </wd:Integration_Attribute_Provider_Reference>
+                     <wd:Integration_Attribute_Data>
+                        <wd:Integration_Attribute_Reference wd:Descriptor="int006 Greenhouse Inbound Attribute Map Service - General / Document Retention in Days">
+                           <wd:ID wd:parent_id="int006 Greenhouse Inbound Attribute Map Service - General" wd:parent_type="Integration_Service_Name" wd:type="Integration_Attribute_Name">Document Retention in Days</wd:ID>
+                           <wd:ID wd:parent_id="cc16087d57d8015dbf8d3dfba8344f37" wd:parent_type="WID" wd:type="Integration_Attribute_Name">Document Retention in Days</wd:ID>
+                           <wd:ID wd:type="WID">cc16087d57d80188223f3efba8345037</wd:ID>
+                        </wd:Integration_Attribute_Reference>
+                        <wd:Integration_Attribute_Name>Document Retention in Days</wd:Integration_Attribute_Name>
+                        <wd:Integration_Attribute_Value_Data>
+                           <wd:Text>90</wd:Text>
+                           <wd:Numeric>90</wd:Numeric>
+                        </wd:Integration_Attribute_Value_Data>
+                     </wd:Integration_Attribute_Data>
+                  </wd:Integration_Attributes_Data>
+
+                  <wd:Integration_Attributes_Data>
+                     <wd:Integration_Attribute_Provider_Reference wd:Descriptor="int006 Greenhouse Inbound Attribute Map Service - Message Queue">
+                        <wd:ID wd:type="Integration_Service_Name">int006 Greenhouse Inbound Attribute Map Service - Message Queue</wd:ID>
+                        <wd:ID wd:type="WID">028cd895a44401b6f6bc819aaa1e6907</wd:ID>
+                     </wd:Integration_Attribute_Provider_Reference>
+                     <wd:Integration_Attribute_Data>
+                        <wd:Integration_Attribute_Reference wd:Descriptor="int006 Greenhouse Inbound Attribute Map Service - Message Queue / Message Queue Endpoint">
+                           <wd:ID wd:parent_id="int006 Greenhouse Inbound Attribute Map Service - Message Queue" wd:parent_type="Integration_Service_Name" wd:type="Integration_Attribute_Name">Message Queue Endpoint</wd:ID>
+                           <wd:ID wd:parent_id="028cd895a44401b6f6bc819aaa1e6907" wd:parent_type="WID" wd:type="Integration_Attribute_Name">Message Queue Endpoint</wd:ID>
+                           <wd:ID wd:type="WID">028cd895a444018b79dc819aaa1e6a07</wd:ID>
+                        </wd:Integration_Attribute_Reference>
+                        <wd:Integration_Attribute_Name>Message Queue Endpoint</wd:Integration_Attribute_Name>
+                        <wd:Integration_Attribute_Value_Data>
+                           <wd:Text>https://e2-impl-cci.workday.com</wd:Text>
+                        </wd:Integration_Attribute_Value_Data>
+                     </wd:Integration_Attribute_Data>
+                     <wd:Integration_Attribute_Data>
+                        <wd:Integration_Attribute_Reference wd:Descriptor="int006 Greenhouse Inbound Attribute Map Service - Message Queue / Message Queue Endpoint Login Username">
+                           <wd:ID wd:parent_id="int006 Greenhouse Inbound Attribute Map Service - Message Queue" wd:parent_type="Integration_Service_Name" wd:type="Integration_Attribute_Name">Message Queue Endpoint Login Username</wd:ID>
+                           <wd:ID wd:parent_id="028cd895a44401b6f6bc819aaa1e6907" wd:parent_type="WID" wd:type="Integration_Attribute_Name">Message Queue Endpoint Login Username</wd:ID>
+                           <wd:ID wd:type="WID">028cd895a4440186b4f0819aaa1e6b07</wd:ID>
+                        </wd:Integration_Attribute_Reference>
+                        <wd:Integration_Attribute_Name>Message Queue Endpoint Login Username</wd:Integration_Attribute_Name>
+                        <wd:Integration_Attribute_Value_Data>
+                           <wd:Text>ISU_INTmq</wd:Text>
+                        </wd:Integration_Attribute_Value_Data>
+                     </wd:Integration_Attribute_Data>
+                     <wd:Integration_Attribute_Data>
+                        <wd:Integration_Attribute_Reference wd:Descriptor="int006 Greenhouse Inbound Attribute Map Service - Message Queue / Message Queue Endpoint Login Password">
+                           <wd:ID wd:parent_id="int006 Greenhouse Inbound Attribute Map Service - Message Queue" wd:parent_type="Integration_Service_Name" wd:type="Integration_Attribute_Name">Message Queue Endpoint Login Password</wd:ID>
+                           <wd:ID wd:parent_id="028cd895a44401b6f6bc819aaa1e6907" wd:parent_type="WID" wd:type="Integration_Attribute_Name">Message Queue Endpoint Login Password</wd:ID>
+                           <wd:ID wd:type="WID">028cd895a44401460bff819aaa1e6c07</wd:ID>
+                        </wd:Integration_Attribute_Reference>
+                        <wd:Integration_Attribute_Name>Message Queue Endpoint Login Password</wd:Integration_Attribute_Name>
+                        <wd:Integration_Attribute_Value_Data>
+                           <wd:Text>password</wd:Text>
+                        </wd:Integration_Attribute_Value_Data>
+                     </wd:Integration_Attribute_Data>
+                     <wd:Integration_Attribute_Data>
+                        <wd:Integration_Attribute_Reference wd:Descriptor="int006 Greenhouse Inbound Attribute Map Service - Message Queue / Message Queue Name">
+                           <wd:ID wd:parent_id="int006 Greenhouse Inbound Attribute Map Service - Message Queue" wd:parent_type="Integration_Service_Name" wd:type="Integration_Attribute_Name">Message Queue Name</wd:ID>
+                           <wd:ID wd:parent_id="028cd895a44401b6f6bc819aaa1e6907" wd:parent_type="WID" wd:type="Integration_Attribute_Name">Message Queue Name</wd:ID>
+                           <wd:ID wd:type="WID">028cd895a444016e8e0e829aaa1e6d07</wd:ID>
+                        </wd:Integration_Attribute_Reference>
+                        <wd:Integration_Attribute_Name>Message Queue Name</wd:Integration_Attribute_Name>
+                        <wd:Integration_Attribute_Value_Data>
+                           <wd:Text>INT-SSK-MQ</wd:Text>
+                        </wd:Integration_Attribute_Value_Data>
+                     </wd:Integration_Attribute_Data>
+                  </wd:Integration_Attributes_Data>
+
+                  <wd:Integration_Attributes_Data>
+                     <wd:Integration_Attribute_Provider_Reference wd:Descriptor="int006 Greenhouse Inbound Attribute Map Service - Primary Logging">
+                        <wd:ID wd:type="Integration_Service_Name">int006 Greenhouse Inbound Attribute Map Service - Primary Logging</wd:ID>
+                        <wd:ID wd:type="WID">028cd895a4440170a7e7fd99aa1e5b07</wd:ID>
+                     </wd:Integration_Attribute_Provider_Reference>
+                     <wd:Integration_Attribute_Data>
+                        <wd:Integration_Attribute_Reference wd:Descriptor="int006 Greenhouse Inbound Attribute Map Service - Primary Logging / Log File Name (Exclude File Extension)">
+                           <wd:ID wd:parent_id="int006 Greenhouse Inbound Attribute Map Service - Primary Logging" wd:parent_type="Integration_Service_Name" wd:type="Integration_Attribute_Name">Log File Name (Exclude File Extension)</wd:ID>
+                           <wd:ID wd:parent_id="028cd895a4440170a7e7fd99aa1e5b07" wd:parent_type="WID" wd:type="Integration_Attribute_Name">Log File Name (Exclude File Extension)</wd:ID>
+                           <wd:ID wd:type="WID">028cd895a44401a31bcffe99aa1e5c07</wd:ID>
+                        </wd:Integration_Attribute_Reference>
+                        <wd:Integration_Attribute_Name>Log File Name (Exclude File Extension)</wd:Integration_Attribute_Name>
+                        <wd:Integration_Attribute_Value_Data>
+                           <wd:Text>PrimaryLogFile</wd:Text>
+                        </wd:Integration_Attribute_Value_Data>
+                     </wd:Integration_Attribute_Data>
+                     <wd:Integration_Attribute_Data>
+                        <wd:Integration_Attribute_Reference wd:Descriptor="int006 Greenhouse Inbound Attribute Map Service - Primary Logging / Log Retention in Days">
+                           <wd:ID wd:parent_id="int006 Greenhouse Inbound Attribute Map Service - Primary Logging" wd:parent_type="Integration_Service_Name" wd:type="Integration_Attribute_Name">Log Retention in Days</wd:ID>
+                           <wd:ID wd:parent_id="028cd895a4440170a7e7fd99aa1e5b07" wd:parent_type="WID" wd:type="Integration_Attribute_Name">Log Retention in Days</wd:ID>
+                           <wd:ID wd:type="WID">028cd895a444010ac5eafe99aa1e5d07</wd:ID>
+                        </wd:Integration_Attribute_Reference>
+                        <wd:Integration_Attribute_Name>Log Retention in Days</wd:Integration_Attribute_Name>
+                        <wd:Integration_Attribute_Value_Data>
+                           <wd:Text>90</wd:Text>
+                           <wd:Numeric>90</wd:Numeric>
+                        </wd:Integration_Attribute_Value_Data>
+                     </wd:Integration_Attribute_Data>
+                     <wd:Integration_Attribute_Data>
+                        <wd:Integration_Attribute_Reference wd:Descriptor="int006 Greenhouse Inbound Attribute Map Service - Primary Logging / Max Entries per Log File">
+                           <wd:ID wd:parent_id="int006 Greenhouse Inbound Attribute Map Service - Primary Logging" wd:parent_type="Integration_Service_Name" wd:type="Integration_Attribute_Name">Max Entries per Log File</wd:ID>
+                           <wd:ID wd:parent_id="028cd895a4440170a7e7fd99aa1e5b07" wd:parent_type="WID" wd:type="Integration_Attribute_Name">Max Entries per Log File</wd:ID>
+                           <wd:ID wd:type="WID">028cd895a444011dfdf7fe99aa1e5e07</wd:ID>
+                        </wd:Integration_Attribute_Reference>
+                        <wd:Integration_Attribute_Name>Max Entries per Log File</wd:Integration_Attribute_Name>
+                        <wd:Integration_Attribute_Value_Data>
+                           <wd:Text>1500</wd:Text>
+                           <wd:Numeric>1500</wd:Numeric>
+                        </wd:Integration_Attribute_Value_Data>
+                     </wd:Integration_Attribute_Data>
+                     <wd:Integration_Attribute_Data>
+                        <wd:Integration_Attribute_Reference wd:Descriptor="int006 Greenhouse Inbound Attribute Map Service - Primary Logging / Cloud Log Output File Type">
+                           <wd:ID wd:parent_id="int006 Greenhouse Inbound Attribute Map Service - Primary Logging" wd:parent_type="Integration_Service_Name" wd:type="Integration_Attribute_Name">Cloud Log Output File Type</wd:ID>
+                           <wd:ID wd:parent_id="028cd895a4440170a7e7fd99aa1e5b07" wd:parent_type="WID" wd:type="Integration_Attribute_Name">Cloud Log Output File Type</wd:ID>
+                           <wd:ID wd:type="WID">028cd895a444017f2604ff99aa1e5f07</wd:ID>
+                        </wd:Integration_Attribute_Reference>
+                        <wd:Integration_Attribute_Name>Cloud Log Output File Type</wd:Integration_Attribute_Name>
+                        <wd:Integration_Attribute_Value_Data>
+                           <wd:Text>HTML</wd:Text>
+                        </wd:Integration_Attribute_Value_Data>
+                     </wd:Integration_Attribute_Data>
+                  </wd:Integration_Attributes_Data>
+
+                  <wd:Integration_Attributes_Data>
+                     <wd:Integration_Attribute_Provider_Reference wd:Descriptor="int006 Greenhouse Inbound Attribute Map Service - Secondary Logging">
+                        <wd:ID wd:type="Integration_Service_Name">int006 Greenhouse Inbound Attribute Map Service - Secondary Logging</wd:ID>
+                        <wd:ID wd:type="WID">028cd895a444010f6e5a189aaa1e6007</wd:ID>
+                     </wd:Integration_Attribute_Provider_Reference>
+                     <wd:Integration_Attribute_Data>
+                        <wd:Integration_Attribute_Reference wd:Descriptor="int006 Greenhouse Inbound Attribute Map Service - Secondary Logging / Log File Name (Exclude File Extension)">
+                           <wd:ID wd:parent_id="int006 Greenhouse Inbound Attribute Map Service - Secondary Logging" wd:parent_type="Integration_Service_Name" wd:type="Integration_Attribute_Name">Log File Name (Exclude File Extension)</wd:ID>
+                           <wd:ID wd:parent_id="028cd895a444010f6e5a189aaa1e6007" wd:parent_type="WID" wd:type="Integration_Attribute_Name">Log File Name (Exclude File Extension)</wd:ID>
+                           <wd:ID wd:type="WID">028cd895a44401f74ec1189aaa1e6107</wd:ID>
+                        </wd:Integration_Attribute_Reference>
+                        <wd:Integration_Attribute_Name>Log File Name (Exclude File Extension)</wd:Integration_Attribute_Name>
+                        <wd:Integration_Attribute_Value_Data>
+                           <wd:Text>SecondaryLogFile</wd:Text>
+                        </wd:Integration_Attribute_Value_Data>
+                     </wd:Integration_Attribute_Data>
+                     <wd:Integration_Attribute_Data>
+                        <wd:Integration_Attribute_Reference wd:Descriptor="int006 Greenhouse Inbound Attribute Map Service - Secondary Logging / Log Retention in Days">
+                           <wd:ID wd:parent_id="int006 Greenhouse Inbound Attribute Map Service - Secondary Logging" wd:parent_type="Integration_Service_Name" wd:type="Integration_Attribute_Name">Log Retention in Days</wd:ID>
+                           <wd:ID wd:parent_id="028cd895a444010f6e5a189aaa1e6007" wd:parent_type="WID" wd:type="Integration_Attribute_Name">Log Retention in Days</wd:ID>
+                           <wd:ID wd:type="WID">028cd895a4440167abd0189aaa1e6207</wd:ID>
+                        </wd:Integration_Attribute_Reference>
+                        <wd:Integration_Attribute_Name>Log Retention in Days</wd:Integration_Attribute_Name>
+                        <wd:Integration_Attribute_Value_Data>
+                           <wd:Text>90</wd:Text>
+                           <wd:Numeric>90</wd:Numeric>
+                        </wd:Integration_Attribute_Value_Data>
+                     </wd:Integration_Attribute_Data>
+                     <wd:Integration_Attribute_Data>
+                        <wd:Integration_Attribute_Reference wd:Descriptor="int006 Greenhouse Inbound Attribute Map Service - Secondary Logging / Max Entries per Log File">
+                           <wd:ID wd:parent_id="int006 Greenhouse Inbound Attribute Map Service - Secondary Logging" wd:parent_type="Integration_Service_Name" wd:type="Integration_Attribute_Name">Max Entries per Log File</wd:ID>
+                           <wd:ID wd:parent_id="028cd895a444010f6e5a189aaa1e6007" wd:parent_type="WID" wd:type="Integration_Attribute_Name">Max Entries per Log File</wd:ID>
+                           <wd:ID wd:type="WID">028cd895a44401bfc8dd189aaa1e6307</wd:ID>
+                        </wd:Integration_Attribute_Reference>
+                        <wd:Integration_Attribute_Name>Max Entries per Log File</wd:Integration_Attribute_Name>
+                        <wd:Integration_Attribute_Value_Data>
+                           <wd:Text>1500</wd:Text>
+                           <wd:Numeric>1500</wd:Numeric>
+                        </wd:Integration_Attribute_Value_Data>
+                     </wd:Integration_Attribute_Data>
+                     <wd:Integration_Attribute_Data>
+                        <wd:Integration_Attribute_Reference wd:Descriptor="int006 Greenhouse Inbound Attribute Map Service - Secondary Logging / Cloud Log Output File Type">
+                           <wd:ID wd:parent_id="int006 Greenhouse Inbound Attribute Map Service - Secondary Logging" wd:parent_type="Integration_Service_Name" wd:type="Integration_Attribute_Name">Cloud Log Output File Type</wd:ID>
+                           <wd:ID wd:parent_id="028cd895a444010f6e5a189aaa1e6007" wd:parent_type="WID" wd:type="Integration_Attribute_Name">Cloud Log Output File Type</wd:ID>
+                           <wd:ID wd:type="WID">028cd895a44401f2fcea189aaa1e6407</wd:ID>
+                        </wd:Integration_Attribute_Reference>
+                        <wd:Integration_Attribute_Name>Cloud Log Output File Type</wd:Integration_Attribute_Name>
+                        <wd:Integration_Attribute_Value_Data>
+                           <wd:Text>CSV</wd:Text>
+                        </wd:Integration_Attribute_Value_Data>
+                     </wd:Integration_Attribute_Data>
+                  </wd:Integration_Attributes_Data>
+                  
+                  <wd:Custom_Launch_Parameter_Data>
+                     <wd:Order>001</wd:Order>
+                     <wd:Name>Run in Validation Mode</wd:Name>
+                     <wd:Data_Type_External_Field_Reference wd:Descriptor="Boolean">
+                        <wd:ID wd:type="WID">9d1e2089026a46308ed50f441ae3ea46</wd:ID>
+                     </wd:Data_Type_External_Field_Reference>
+                  </wd:Custom_Launch_Parameter_Data>
+                  <wd:Custom_Launch_Parameter_Data>
+                     <wd:Order>002</wd:Order>
+                     <wd:Name>Run with Debug Logging</wd:Name>
+                     <wd:Data_Type_External_Field_Reference wd:Descriptor="Boolean">
+                        <wd:ID wd:type="WID">9d1e2089026a46308ed50f441ae3ea46</wd:ID>
+                     </wd:Data_Type_External_Field_Reference>
+                  </wd:Custom_Launch_Parameter_Data>
+                  <wd:Custom_Launch_Parameter_Data>
+                     <wd:Order>003</wd:Order>
+                     <wd:Name>Source Integration Event WID (Build and Debug Only)</wd:Name>
+                     <wd:Data_Type_External_Field_Reference wd:Descriptor="Text">
+                        <wd:ID wd:type="WID">eb1c24f5b33d4ed48d1d676d6edbee23</wd:ID>
+                     </wd:Data_Type_External_Field_Reference>
+                  </wd:Custom_Launch_Parameter_Data>
+               </wd:Integration_System_Data>
+            </wd:Integration_System>
+         </wd:Response_Data>
+      </wd:Get_Integration_Systems_Response>
+   </env:Body>
+</env:Envelope>

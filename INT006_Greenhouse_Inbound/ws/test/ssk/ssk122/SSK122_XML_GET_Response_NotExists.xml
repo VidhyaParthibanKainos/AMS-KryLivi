@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<queues xmlns="http://www.workday.com/wd-queue/17" count="4">
+    <queue>
+        <name>new-message-queue-for-test</name>
+        <uri>/ccx/wd-queue/new-message-queue-for-test</uri>
+        <poll-uri>/ccx/wd-queue/new-message-queue-for-test/fresh</poll-uri>
+        <message-count>0</message-count>
+    </queue>
+    <queue>
+        <name>test-message-queue-1-do-not-delete</name>
+        <uri>/ccx/wd-queue/test-message-queue-1-do-not-delete</uri>
+        <poll-uri>/ccx/wd-queue/test-message-queue-1-do-not-delete/fresh</poll-uri>
+        <message-count>0</message-count>
+    </queue>
+    <queue>
+        <name>test-message-queue-2-do-not-delete</name>
+        <uri>/ccx/wd-queue/test-message-queue-2-do-not-delete</uri>
+        <poll-uri>/ccx/wd-queue/test-message-queue-2-do-not-delete/fresh</poll-uri>
+        <message-count>0</message-count>
+    </queue>
+</queues>

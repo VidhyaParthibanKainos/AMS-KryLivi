@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Documents>
+	<Document>
+		<Collection>cc-retrieve</Collection>
+    	<EntryID>50684860-7622-412a-3014-4f092f012129</EntryID>
+		<Filename>vendor-file1.xml</Filename>
+    	<Filesize>53610</Filesize>
+    	<Mimetype>text/xml</Mimetype>
+	</Document>
+	<Document>
+		<Collection>cc-retrieve</Collection>
+    	<EntryID>7277537f-4505-4b38-243c-242a3f21220d</EntryID>
+		<Filename>vendor-file2.xml</Filename>
+    	<Filesize>53480</Filesize>
+    	<Mimetype>text/xml</Mimetype>
+	</Document>
+	<Document>
+		<Collection>cc-retrieve</Collection>
+    	<EntryID>4d5b7233-586b-444b-3d4c-215811332815</EntryID>
+		<Filename>vendor-file3.xml</Filename>
+    	<Filesize>53321</Filesize>
+    	<Mimetype>text/xml</Mimetype>
+	</Document>
+</Documents>

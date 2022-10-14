@@ -1,0 +1,134 @@
+<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+   <env:Body>
+      <wd:Get_Event_Documents_Response wd:version="v31.2" xmlns:wd="urn:com.workday/bsvc">
+         <wd:Request_References>
+            <wd:Integration_Event_Reference wd:Descriptor="Integration ESB Invocation (Retrieval - 02/04/2019 13:36:10.040 (Completed))">
+               <wd:ID wd:type="WID">86808e7ece6701c6ccded01fa6299018</wd:ID>
+               <wd:ID wd:type="Background_Process_Instance_ID">INTEGRATION_ESB_INVOCATION-9-35632</wd:ID>
+            </wd:Integration_Event_Reference>
+         </wd:Request_References>
+         <wd:Response_Results>
+            <wd:Total_Results>1</wd:Total_Results>
+            <wd:Total_Pages>1</wd:Total_Pages>
+            <wd:Page_Results>1</wd:Page_Results>
+            <wd:Page>1</wd:Page>
+         </wd:Response_Results>
+         <wd:Response_Data>
+            <wd:Event_Documents>
+               <wd:Integration_Event_Reference wd:Descriptor="Retrieval - 02/04/2019 13:36:10.040 (Completed)">
+                  <wd:ID wd:type="WID">86808e7ece6701ab0f28bf1fa6298b18</wd:ID>
+                  <wd:ID wd:type="Background_Process_Instance_ID">RETRIEVAL_EVENT-9-9360</wd:ID>
+               </wd:Integration_Event_Reference>
+               <wd:Repository_Document>
+                  <wd:Repository_Document_Reference wd:Descriptor="request-86808e7ece6701c6ccded01fa6299018.log">
+                     <wd:ID wd:type="WID">86808e7ece670121e0fb0083a6299818</wd:ID>
+                     <wd:ID wd:type="Document_ID">86808e7ece6701c6ccded01fa6299018/29640a54-6e1e-4128-396b-0f2f1e231d20</wd:ID>
+                  </wd:Repository_Document_Reference>
+                  <wd:Repository_Document_Data wd:Document_ID="86808e7ece6701c6ccded01fa6299018/29640a54-6e1e-4128-396b-0f2f1e231d20" wd:File_Name="request-86808e7ece6701c6ccded01fa6299018.log">
+                     <wd:File_Size>3083</wd:File_Size>
+                     <wd:Content_Type_Reference wd:Descriptor="text/xml - mime_xml">
+                        <wd:ID wd:type="WID">d9ae655e446c11de98360015c5e6daf6</wd:ID>
+                        <wd:ID wd:type="Content_Type_ID">text/xml</wd:ID>
+                     </wd:Content_Type_Reference>
+                     <wd:Document_Type_Reference wd:Descriptor="XML Document (XML)">
+                        <wd:ID wd:type="WID">dc72b740446c11de98360015c5e6daf6</wd:ID>
+                        <wd:ID wd:type="Document_Type_ID">XML</wd:ID>
+                     </wd:Document_Type_Reference>
+                     <wd:Expiration_Timestamp>2019-04-05T14:43:14.000-07:00</wd:Expiration_Timestamp>
+                     <wd:Owner_Reference wd:Descriptor="ISU_INT /">
+                        <wd:ID wd:type="WID">86808e7ece6701f3976eb37192295915</wd:ID>
+                        <wd:ID wd:type="System_User_ID">ISU_INT</wd:ID>
+                        <wd:ID wd:type="WorkdayUserName">ISU_INT</wd:ID>
+                     </wd:Owner_Reference>
+                     <wd:Document_Tag_Reference wd:Descriptor="Cloud Request">
+                        <wd:ID wd:type="WID">2bea9621794710001a97acff14700001</wd:ID>
+                        <wd:ID wd:type="Workday_Document_Tag_Name">Cloud Request</wd:ID>
+                     </wd:Document_Tag_Reference>
+                  </wd:Repository_Document_Data>
+               </wd:Repository_Document>
+               <wd:Repository_Document>
+                  <wd:Repository_Document_Reference wd:Descriptor="server-86808e7ece6701c6ccded01fa6299018.log">
+                     <wd:ID wd:type="WID">86808e7ece6701522d720183a6299918</wd:ID>
+                     <wd:ID wd:type="Document_ID">86808e7ece6701c6ccded01fa6299018/2c51086e-1c5e-4d3f-0e79-291209501364</wd:ID>
+                  </wd:Repository_Document_Reference>
+                  <wd:Repository_Document_Data wd:Document_ID="86808e7ece6701c6ccded01fa6299018/2c51086e-1c5e-4d3f-0e79-291209501364" wd:File_Name="server-86808e7ece6701c6ccded01fa6299018.log">
+                     <wd:File_Size>25076</wd:File_Size>
+                     <wd:Content_Type_Reference wd:Descriptor="text/plain - mime_plain">
+                        <wd:ID wd:type="WID">d9ae6950446c11de98360015c5e6daf6</wd:ID>
+                        <wd:ID wd:type="Content_Type_ID">text/plain</wd:ID>
+                     </wd:Content_Type_Reference>
+                     <wd:Document_Type_Reference wd:Descriptor="Text Document (TXT)">
+                        <wd:ID wd:type="WID">dc72b65a446c11de98360015c5e6daf6</wd:ID>
+                        <wd:ID wd:type="Document_Type_ID">TXT</wd:ID>
+                     </wd:Document_Type_Reference>
+                     <wd:Expiration_Timestamp>2019-04-05T14:43:14.000-07:00</wd:Expiration_Timestamp>
+                     <wd:Owner_Reference wd:Descriptor="ISU_INT /">
+                        <wd:ID wd:type="WID">86808e7ece6701f3976eb37192295915</wd:ID>
+                        <wd:ID wd:type="System_User_ID">ISU_INT</wd:ID>
+                        <wd:ID wd:type="WorkdayUserName">ISU_INT</wd:ID>
+                     </wd:Owner_Reference>
+                     <wd:Document_Tag_Reference wd:Descriptor="Log File">
+                        <wd:ID wd:type="WID">2bea9621794710001a97ac67aea00000</wd:ID>
+                        <wd:ID wd:type="Workday_Document_Tag_Name">Log File</wd:ID>
+                     </wd:Document_Tag_Reference>
+                  </wd:Repository_Document_Data>
+               </wd:Repository_Document>
+               <wd:Repository_Document>
+                  <wd:Repository_Document_Reference wd:Descriptor="profile-86808e7ece6701c6ccded01fa6299018.log">
+                     <wd:ID wd:type="WID">86808e7ece67013632dc0183a6299a18</wd:ID>
+                     <wd:ID wd:type="Document_ID">86808e7ece6701c6ccded01fa6299018/74342f54-4a14-4516-0e4b-487667770759</wd:ID>
+                  </wd:Repository_Document_Reference>
+                  <wd:Repository_Document_Data wd:Document_ID="86808e7ece6701c6ccded01fa6299018/74342f54-4a14-4516-0e4b-487667770759" wd:File_Name="profile-86808e7ece6701c6ccded01fa6299018.log">
+                     <wd:File_Size>8911</wd:File_Size>
+                     <wd:Content_Type_Reference wd:Descriptor="text/plain - mime_plain">
+                        <wd:ID wd:type="WID">d9ae6950446c11de98360015c5e6daf6</wd:ID>
+                        <wd:ID wd:type="Content_Type_ID">text/plain</wd:ID>
+                     </wd:Content_Type_Reference>
+                     <wd:Document_Type_Reference wd:Descriptor="Text Document (TXT)">
+                        <wd:ID wd:type="WID">dc72b65a446c11de98360015c5e6daf6</wd:ID>
+                        <wd:ID wd:type="Document_Type_ID">TXT</wd:ID>
+                     </wd:Document_Type_Reference>
+                     <wd:Expiration_Timestamp>2019-04-05T14:43:14.000-07:00</wd:Expiration_Timestamp>
+                     <wd:Owner_Reference wd:Descriptor="ISU_INT /">
+                        <wd:ID wd:type="WID">86808e7ece6701f3976eb37192295915</wd:ID>
+                        <wd:ID wd:type="System_User_ID">ISU_INT</wd:ID>
+                        <wd:ID wd:type="WorkdayUserName">ISU_INT</wd:ID>
+                     </wd:Owner_Reference>
+                     <wd:Document_Tag_Reference wd:Descriptor="Log File">
+                        <wd:ID wd:type="WID">2bea9621794710001a97ac67aea00000</wd:ID>
+                        <wd:ID wd:type="Workday_Document_Tag_Name">Log File</wd:ID>
+                     </wd:Document_Tag_Reference>
+                  </wd:Repository_Document_Data>
+               </wd:Repository_Document>
+               <wd:Repository_Document>
+                  <wd:Repository_Document_Reference wd:Descriptor="consolidated-report-86808e7ece6701c6ccded01fa6299018.xml">
+                     <wd:ID wd:type="WID">86808e7ece67017aaa5a0283a6299b18</wd:ID>
+                     <wd:ID wd:type="Document_ID">consolidated-reports/50485345-171e-4e39-2d31-273b022b0b3f</wd:ID>
+                  </wd:Repository_Document_Reference>
+                  <wd:Repository_Document_Data wd:Document_ID="consolidated-reports/50485345-171e-4e39-2d31-273b022b0b3f" wd:File_Name="consolidated-report-86808e7ece6701c6ccded01fa6299018.xml">
+                     <wd:File_Size>27933</wd:File_Size>
+                     <wd:Content_Type_Reference wd:Descriptor="text/xml - mime_xml">
+                        <wd:ID wd:type="WID">d9ae655e446c11de98360015c5e6daf6</wd:ID>
+                        <wd:ID wd:type="Content_Type_ID">text/xml</wd:ID>
+                     </wd:Content_Type_Reference>
+                     <wd:Document_Type_Reference wd:Descriptor="XML Document (XML)">
+                        <wd:ID wd:type="WID">dc72b740446c11de98360015c5e6daf6</wd:ID>
+                        <wd:ID wd:type="Document_Type_ID">XML</wd:ID>
+                     </wd:Document_Type_Reference>
+                     <wd:Expiration_Timestamp>2019-04-05T14:43:16.000-07:00</wd:Expiration_Timestamp>
+                     <wd:Owner_Reference wd:Descriptor="ISU_INT /">
+                        <wd:ID wd:type="WID">86808e7ece6701f3976eb37192295915</wd:ID>
+                        <wd:ID wd:type="System_User_ID">ISU_INT</wd:ID>
+                        <wd:ID wd:type="WorkdayUserName">ISU_INT</wd:ID>
+                     </wd:Owner_Reference>
+                     <wd:Document_Tag_Reference wd:Descriptor="Consolidated Report">
+                        <wd:ID wd:type="WID">5bad0774e8f84fe88af10efd70999de3</wd:ID>
+                        <wd:ID wd:type="Workday_Document_Tag_Name">Consolidated Report</wd:ID>
+                     </wd:Document_Tag_Reference>
+                  </wd:Repository_Document_Data>
+               </wd:Repository_Document>
+            </wd:Event_Documents>
+         </wd:Response_Data>
+      </wd:Get_Event_Documents_Response>
+   </env:Body>
+</env:Envelope>

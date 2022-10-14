@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cc1:CapeConnect xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bd="http://www.capeclear.com/eclipse/integrator/deployment/bdd" xmlns:cc1="http://www.capeclear.com/capeconnect/40/ws-application" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ws-application>
+    <description>Service Description</description>
+    <controllerClassName>com.capeclear.runtime.cc.assembly.AssemblyController</controllerClassName>
+    <enabled>true</enabled>
+    <initParams>
+      <property>
+        <name>cc.originator.type</name>
+        <value>Studio StarterKit 2020r2.03</value>
+      </property>
+    </initParams>
+    <adapter>
+      <properties/>
+      <targetName>JavaClass</targetName>
+      <activationConfig>
+        <policy>application</policy>
+        <timeoutSeconds>0</timeoutSeconds>
+        <maxRetries>1</maxRetries>
+      </activationConfig>
+    </adapter>
+    <serializationConfig>
+      <mappings/>
+    </serializationConfig>
+    <interceptors/>
+  </ws-application>
+</cc1:CapeConnect>

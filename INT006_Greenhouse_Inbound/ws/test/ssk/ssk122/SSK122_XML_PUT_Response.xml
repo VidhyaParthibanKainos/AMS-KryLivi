@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<queue xmlns="http://www.workday.com/wd-queue/17">
+    <name>INT-SSK-MQ</name>
+    <uri>/ccx/wd-queue/INT-SSK-MQ</uri>
+    <poll-uri>/ccx/wd-queue/INT-SSK-MQ/fresh</poll-uri>
+    <message-count>0</message-count>
+</queue>

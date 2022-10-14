@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:wd="urn:com.workday/bsvc">
+    <soapenv:Header>
+        <wd:Workday_Common_Header>
+            <wd:Include_Reference_Descriptors_In_Response>true</wd:Include_Reference_Descriptors_In_Response>
+        </wd:Workday_Common_Header>
+    </soapenv:Header>
+    <soapenv:Body>
+        <wd:Get_Import_Process_Messages_Request wd:version="v35.0">
+            <wd:Request_Criteria>
+                <wd:Import_Process_Reference>
+                    <wd:ID wd:type="WID">231b4975b2a2461d98e7b7b3c613964d</wd:ID>
+                </wd:Import_Process_Reference>
+            </wd:Request_Criteria>
+            <wd:Response_Filter>
+            	<wd:As_Of_Effective_Date>localEffectiveAsOf</wd:As_Of_Effective_Date>
+            	<wd:As_Of_Entry_DateTime>localEntryAsOf</wd:As_Of_Entry_DateTime>
+                <wd:Page>1</wd:Page>
+                <wd:Count>999</wd:Count>
+            </wd:Response_Filter>
+        </wd:Get_Import_Process_Messages_Request>
+    </soapenv:Body>
+</soapenv:Envelope>

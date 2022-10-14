@@ -1,0 +1,9 @@
+<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+	<env:Body>
+		<wd:Put_Import_Process_Response wd:version="v35.0" xmlns:wd="urn:com.workday/bsvc">
+			<wd:Import_Process_Reference wd:Descriptor="Import Eligible Earnings Override">
+				<wd:ID wd:type="WID">1da8b422311b4929bfa4520f7f0b4e83</wd:ID>
+			</wd:Import_Process_Reference>
+		</wd:Put_Import_Process_Response>
+	</env:Body>
+</env:Envelope>

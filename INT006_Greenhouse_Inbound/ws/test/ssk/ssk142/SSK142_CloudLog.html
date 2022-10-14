@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Workday HTML log file</title>
+<link rel="shortcut icon" href="https://www.workday.com/favicon.ico">
+<script type="text/javascript" onload="">
+var data = [{"l":"ERROR","m":"Error Message","d":"Error Message Detail","r":"101","t":"2020-05-12T18:19:01.007","LocalIn":"testErrorMessage","ErrorCode":"10001","RecordNumber":"2","SupportData":"Details about 10001"},
+]; var columns = [{
+  'name': 'LocalIn',
+  'description': 'Local In',
+  'valueOf': function(record) {
+    if (record.hasOwnProperty('LocalIn')) {
+      return record["LocalIn"];
+    }
+    return "";
+  }
+}
+
+, {
+  'name': 'ErrorCode',
+  'description': 'Error Code',
+  'valueOf': function(record) {
+    if (record.hasOwnProperty('ErrorCode')) {
+      return record["ErrorCode"];
+    }
+    return "";
+  }
+}
+
+, {
+  'name': 'RecordNumber',
+  'description': 'Record Number',
+  'valueOf': function(record) {
+    if (record.hasOwnProperty('RecordNumber')) {
+      return record["RecordNumber"];
+    }
+    return "";
+  }
+}
+
+, {
+  'name': 'SupportData',
+  'description': 'Support Data',
+  'valueOf': function(record) {
+    if (record.hasOwnProperty('SupportData')) {
+      return record["SupportData"];
+    }
+    return "";
+  }
+}
+
+];var basic_data = {"integration_system_name":"INT_Studio_StarterKit_Framework_Collection/INT_Studio_StarterKit/StartHere","collection_name":null,"started":"2018-11-08T14:34:10.200-08:00","event_id":"5381865135a10104b90e322b1d008800","user":"wd-implementer","truncated":false,"limit_mb":256};
+var filtered_data = []
+
+var FILTERS = {
+	l: 'ALL',
+	text: '',
+};
+
+var RPP = 20;
+var CURRENT_PAGE = 1;
+var PAGES = 0;
+
+function safe_str(value) {
+	return (value || '').toString().toLowerCase();
+}
+
+function create_data_predicate(level, text) {
+	var safeText = safe_str(text)
+	return function data_predicate(row) {
+		if(level !== row.l && level !=='ALL') {
+			return false
+		}
+		for (key in row) {
+			if(row.hasOwnProperty(key) && safe_str(row[key]).indexOf(safeText) >= 0) {
+				return true;
+			}
+		}
+		return false;
+	}
+}
+
+function set_basic_data() {
+	Object.keys(basic_data).forEach(function(property) {
+		(document.getElementById('basic_data_' + property) || {}).innerHTML = basic_data[property] || '';
+	});
+	if (basic_data.header) {
+		(document.getElementById('basic_data_integration_system_name') || {}).innerHTML = basic_data.header;
+	}
+}
+
+function init_data() {
+	CURRENT_PAGE = 1;
+	PAGES = 0;
+  filtered_data = data.filter(create_data_predicate(FILTERS.l, FILTERS.text));
+	PAGES = Math.ceil(filtered_data.length / RPP);
+	show_page();
+}
+
+function do_truncation_warning() {
+	hide(document.getElementById('limit_warning'), !basic_data.truncated)
+	set(document.getElementById('limit_warning_text'), "The log file was truncated because the limit of " + basic_data.limit_mb + " MB was exceeded. Please refer to the documentation to check for potential solutions.") 
+}
+
+function create_extra_columns_controls() {
+	var details = document.getElementById('detail_container')
+	
+	for (i = 0; i < columns.length; i++) { 
+        var column = columns[i]
+        create_column_control(details, column)
+	}
+}
+
+function create_tr(data, i, even) {
+	var rowDOM = document.createElement('tr');
+	var classes = ['row_style_' + data.l, even ? 'even' : 'odd', 'pointer'];
+	rowDOM.setAttribute('onclick', 'selectRecord(this)');
+	rowDOM.setAttribute('data', i);
+	rowDOM.setAttribute('class',  classes.join(' '));
+	rowDOM.appendChild(create_td(data.t || '-'));
+	rowDOM.appendChild(create_td(data.l));
+	rowDOM.appendChild(create_td(data.r));
+	rowDOM.appendChild(create_td(data.m));
+	rowDOM.appendChild(create_td(data.d));
+	rowDOM.appendChild(document.createTextNode("\n"));
+	return rowDOM;
+}
+
+function show_page() {
+	var tbody = document.getElementById('data-body')
+	var even = false;
+	tbody.innerHTML = '';
+	for (i = (CURRENT_PAGE - 1) * RPP; i < CURRENT_PAGE * RPP && i < filtered_data.length; i++) {
+		var row = filtered_data[i]
+		var rowDOM = create_tr(row, i, even);
+		even = !even
+		tbody.appendChild(rowDOM);
+	}
+
+	update_paging();
+}
+
+function truncated(text) {
+	if (text === null || typeof(text) === "undefined") {
+		return ""
+	}
+	if(text.length > 110) {
+		return text.substr(0, 100) + '...';
+	}
+	return text;
+}
+
+function selectRecord(cmp) {
+	var idx = cmp.getAttribute('data')
+	
+	var details = document.getElementById('detail_container')
+	details.setAttribute('class', 'row_style_' + filtered_data[idx].l)
+	set(document.getElementById('severity'), filtered_data[idx].l)
+	set(document.getElementById('reference_id'), filtered_data[idx].r)
+	set(document.getElementById('message'), filtered_data[idx].m)
+	set(document.getElementById('message_details'), filtered_data[idx].d)
+	
+	for (i = 0; i < columns.length; i++) { 
+        var column = columns[i]
+    	set(document.getElementById(column_key(column.name)), column.valueOf(filtered_data[idx]))
+	}
+	
+	var trs = cmp.parentNode.getElementsByTagName('tr')
+	for (i = 0; i < trs.length; i++) {
+		var cls = trs[i].getAttribute('class')
+		if (cls.indexOf(' selected') > -1) {
+			trs[i].setAttribute('class', cls.replace(' selected', ''))
+		}
+	}
+	cmp.setAttribute('class', cmp.getAttribute('class') + ' selected')
+}
+
+function set(cmp, value) {
+	cmp.innerHTML = ''
+	cmp.appendChild(document.createTextNode(value))
+}
+
+function update_paging() {
+	var pagingDiv = document.getElementById('paging')
+	var as = pagingDiv.getElementsByTagName('a')
+	
+	hide(as[0], CURRENT_PAGE <= 1)
+	hide(as[1], CURRENT_PAGE <= 1)
+	hide(as[2], CURRENT_PAGE >= PAGES)
+    hide(as[3], CURRENT_PAGE >= PAGES)
+	
+	pagingDiv.getElementsByTagName('input')[0].setAttribute('value', CURRENT_PAGE + '/' + PAGES)
+}
+
+function switch_to_page(pno) {
+	if (pno > 0 && pno <= PAGES) {
+		CURRENT_PAGE = pno;
+		show_page();
+	} else {
+		update_paging();
+	}
+}
+
+
+function hide(cmp, hide) {
+	if (hide) {cmp.setAttribute('hidden', 'true')} else {cmp.removeAttribute('hidden')}
+}
+
+function create_td(value) {
+	var l = document.createElement('td')
+    l.appendChild(document.createTextNode(truncated(value)))
+    return l
+}
+
+function create_column_control(parent_div, column) {
+	var hd = document.createElement('h4')
+	hd.appendChild(document.createTextNode(truncated(column.description)))
+	var value = document.createElement('span')
+	value.setAttribute('class', 'code-xml')
+	value.setAttribute('id', column_key(column.name))
+	parent_div.appendChild(hd)
+	parent_div.appendChild(value)
+}
+
+function column_key(name) {
+	return "extra_column_" + name;
+}
+
+function cb_filter(level) {
+	FILTERS.l = level;
+	init_data()
+}
+
+function text_filter(text) {
+	FILTERS.text = text;
+	init_data();
+}
+
+function endsWith(str, suffix) {
+	return str.indexOf(suffix, str.length - suffix.length) !== -1;
+}
+
+function ensureString(input) {
+  // void operator evaluates the next expr and returns undefined
+  if (input === null || input === void 0) { 
+    return ''
+  }
+  return input.toString()
+}
+
+function platformDependentSave(filename, blob) {
+	if (window.navigator && window.navigator.msSaveOrOpenBlob) {
+		window.navigator.msSaveOrOpenBlob(blob, filename);
+		return;
+	}
+	var element = document.createElement('a');
+	element.setAttribute('href', URL.createObjectURL(blob));
+	element.setAttribute('download', filename);
+	element.style.display = 'none';
+	document.body.appendChild(element);
+	element.click();
+	document.body.removeChild(element);
+}
+
+function save_csv() {
+  var scont = true
+  
+  if (is_filter_set()) {
+	  scont = confirm("Only the filtered data, shown on screen, will be exported. Are you sure that you want to continue exporting?");
+  }
+  
+  if (scont) {
+	  var blob = to_csv(); 
+	  var filename = ensureString(window.location.pathname.match(/([^\/]+)$/)[1])
+	  if (endsWith(filename, '.html')) {
+			filename = filename.substring(0, filename.length - 5)
+		}
+	  filename = filename + ".csv"
+	 	platformDependentSave(filename, blob)
+  }
+}
+
+function es(str) {return '"' + ensureString(str).replace(/"/g, '""') + '"';}
+
+function to_csv() {
+  var ctype = {type: 'text/csv'};
+  var header = ["Timestamp", "Severity", "Reference ID", "Message", "Message Details"].concat(columns.map(function (c) { return es(c.name);})).join(",");
+  var blobs = data.filter(create_data_predicate(FILTERS.l, FILTERS.text)).map(function (row) {
+	  return new Blob(['\n' + [row.t, row.l, row.r, row.m, row.d].map(es).concat(columns.map(function (c) { return es(c.valueOf(row));})).join(",")], ctype)
+  })
+  return new Blob([new Blob([header], ctype), new Blob(blobs, ctype)], ctype);
+}
+
+function is_filter_set() {
+	return FILTERS.l != 'ALL' || FILTERS.text.length > 0  
+}
+</script>
+<style type="text/css">
+
+.wd-table {
+	border-collapse: collapse;
+	border-spacing: 1;
+	width: 100%;
+	display: table;
+	border: none;
+}
+.wd-table tr td {
+	border-top: 1px solid #a9a9a9;
+	padding: 5px;
+}
+
+.wd-table tr th{
+	padding: 5px;
+}
+
+.odd td {
+	background-color: #f9f9f9;
+}
+
+.even td {
+	background-color: #ffffff;
+}
+
+.selected td {
+	background-color: #006DB6;
+	color: #ffffff;
+	border-top: #006DB6;
+	border-bottom: #006DB6;
+}
+
+.wd-table th {
+	font-style: bold;
+	text-align: center;
+}
+
+.wd-table input {
+	width: 95%
+}
+
+body {
+     margin: 0;
+     padding: 0;
+}
+
+span, div, p, td {
+	font-size: 12px;
+}
+
+h1, h2, span, div, p, td {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#main_container {
+  float: left;
+	width: 620px;
+	margin-bottom: 20px;
+}
+
+.detail_root {
+	  float: left;
+    margin-right: 20px;
+    width: 350px;
+}
+
+.detail_header {
+	border-bottom: 1px solid #bababa
+}
+
+#root_container {
+    margin: 5px auto 0px auto;
+    position: relative;
+    width: 1000px;
+}
+
+.nav {
+    padding: 3px;
+    background: #eeeeee;
+    text-align: center;
+}
+
+.nav a {
+	padding: 1px 10px;
+	cursor: pointer;
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	border-radius: 2px;
+}
+
+.nav a:hover {
+	background-color: #dcdcdc;
+}
+
+#download_csv {
+	white-space: nowrap;
+	display: inline-block;
+	background: #bababa;
+	color: #ffffff;
+	padding: 5px 10px;
+}
+
+#download_csv:hover {
+	background: #006DB6;
+	color: #ffffff;
+}
+
+.nav input {
+	width: 40px;
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	border-radius: 2px;
+	padding: 2px;
+}
+
+.code-xml {
+	font-family: monospace;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.severity_div {
+	text-align: left;
+	padding: 20px 0px;
+}
+
+.severity_div td {
+	vertical-align: middle;
+}
+
+.severity_div label {
+	padding: 5px 10px;
+}
+
+.severity_div input[type="radio"]:checked + label {
+	background: #006DB6;
+	color: #ffffff;
+}
+
+.severity_div input[type="radio"] + label {
+	background: #bababa;
+	color: #ffffff;
+}
+
+.severity_div input[type="radio"] + label:hover {
+	background: #006DB6;
+	color: #ffffff;
+}
+
+.severity_div input[type="radio"] {
+	display: none;
+	width: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.severity_div .filter_field {
+	border: 1px solid #cccccc;
+	border-radius: 2px;
+	padding: 4.5px 5px;
+	max-width: 125px;
+}
+
+.page_header {
+	background-color: #006DB6;
+	height: 60px;
+	clear: both;
+}
+
+.page_header .logo {
+	float:left;
+	margin: 10px 20px 0px 10px;
+}
+
+.page_header h1 {
+	color: #ffffff;
+	float: left;
+	line-height: 60px;
+	margin: 0px;
+	padding: 0px;
+	font-size: 18px;
+}
+
+#header_container {
+	float: right;
+	margin: 8px 5px;
+}
+
+#header_table td, #header_table th {
+  padding: 1px 5px;
+	text-align: left;
+	color: #ffffff;
+	border: none;
+	font-size: 10px;
+	opacity: .8;
+}
+
+#limit_warning {
+	color: black;
+	border-color: black;
+	border-style: solid;
+	border-width: 1px;
+	background-color: red;
+}
+</style>
+
+</head>
+<body onload="init_data();create_extra_columns_controls();set_basic_data();do_truncation_warning();">
+<div class="page_header">
+	<img class="logo" src="data:image/png;base64,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" alt="">
+	<h1 id="basic_data_integration_system_name"></h1>
+	<div id='header_container'>
+		<div style="display: inline-block">
+			<table id='header_table' class="wd-table">
+				<tr>
+					<th>Started:</th>
+					<td id="basic_data_started"></td>
+				</tr>
+				<tr>
+					<th>Event ID:</th>
+					<td id="basic_data_event_id"></td>
+				</tr>
+				<tr>
+					<th>User:</th>
+					<td id="basic_data_user"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+<div id="limit_warning">
+	<span id="limit_warning_text"></span>
+</div>
+<div id='root_container' >
+	<!-- Basic info -->
+	<!-- Details -->
+	<div class="detail_root">
+		<div id='detail_container'>
+			<h2 class="detail_header">Details:</h2>
+			
+			Reference ID: <span class="code-xml" id="reference_id"></span><br/>
+			Severity: <span class="code-xml" id="severity"></span>
+			<h4>Message Summary</h4>
+			<span class="code-xml" id="message"></span>
+			<h4>Message Details</h4>
+			
+			<div class="code-xml" lang="xml" id="message_details" >
+			
+			</div>
+			<!-- extra columns will go here -->
+			</div>
+		</div>
+	</div>
+
+	<!-- Filterable table -->
+	<div id='main_container'>
+		<table class='severity_div'>
+			<tbody>
+				<tr>
+					<td>
+						<input name='LEVEL' value="FATAL" id='FATAL' type="radio" onchange="cb_filter('FATAL')"></input>
+						<label for='FATAL' class='row_style_FATAL pointer'>FATAL</label>
+					</td>
+					<td>
+						<input name='LEVEL' value="ERROR" id='ERROR' type="radio" onchange="cb_filter('ERROR')"></input>
+						<label for='ERROR' class='row_style_ERROR pointer'>ERROR</label>
+					</td>
+					<td>
+						<input name='LEVEL' value="WARN" id='WARN' type="radio" onchange="cb_filter('WARN')"></input>
+						<label for='WARN' class='row_style_WARN pointer'>WARN</label>
+					</td>
+					<td>
+						<input name='LEVEL' value="INFO" id='INFO' type="radio" onchange="cb_filter('INFO')"></input>
+						<label for='INFO' class='row_style_INFO pointer'>INFO</label>
+					</td>
+					<td>
+						<input name='LEVEL' value="DEBUG" id='DEBUG' type="radio" onchange="cb_filter('DEBUG')"></input>
+						<label for='DEBUG' class='row_style_DEBUG pointer'>DEBUG</label>
+					</td>
+					<td>
+						<input name='LEVEL' value="ALL" id='ALL' type="radio" onchange="cb_filter('ALL')" checked></input>
+						<label for='ALL' class='row_style_INFO pointer'>ALL</label>
+					</td>
+					<td style="width: 99%;">
+						<input type="text" class="filter_field" placeholder="Search..." oninput="text_filter(this.value)" />
+					</td>
+					<td>
+						<a onclick="save_csv()" id="download_csv" class="pointer">Export to CSV</a>
+					</td>
+				<tr>
+			</tbody>
+		</table>
+
+		<table id = 'data' class="wd-table">
+			<thead> 
+				<tr>
+					<th>Timestamp</th>
+					<th>Level</th>
+					<th><nobr>Reference ID</nobr></th>
+					<th><nobr>Message Summary</nobr></th>
+					<th><nobr>Message Details</nobr></th>
+				</tr>
+			</thead>
+			<tbody id='data-body'>
+			</tbody>
+		</table>
+		<div class="nav" id='paging'>
+			<a onclick="switch_to_page(1)">&lt;&lt;</a> 
+			<a onclick="switch_to_page(CURRENT_PAGE -1)">&lt;</a> 
+			<input type="text" disabled> </input> 
+			<a onclick="switch_to_page(CURRENT_PAGE + 1)">&gt;</a> 
+			<a onclick="switch_to_page(PAGES)">&gt;&gt;</a>
+		</div>
+	</div>
+
+</body>
+</html>

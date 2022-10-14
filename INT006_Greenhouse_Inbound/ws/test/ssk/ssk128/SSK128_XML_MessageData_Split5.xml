@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wd:Report_Entry xmlns:wd="urn:com.workday.report/CR_INT_Workers" xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+    <wd:Worker wd:Descriptor="Joy Banks">
+        <wd:ID wd:type="WID">3aa5550b7fe348b98d7b5741afc65534</wd:ID>
+        <wd:ID wd:type="Employee_ID">21431</wd:ID>
+    </wd:Worker>
+</wd:Report_Entry>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map>
+	<Entry>
+		<Var>
+			<Key>WorkerReferenceIdType</Key>
+			<Value>typeFromMap1</Value>
+		</Var>
+		<Var>
+			<Key>WorkerReferenceId</Key>
+			<Value>valueFromMap1</Value>
+		</Var>
+	</Entry>
+	<Entry>
+		<Var>
+			<Key>WorkerReferenceIdType</Key>
+			<Value>typeFromMap2</Value>
+		</Var>
+		<Var>
+			<Key>WorkerReferenceId</Key>
+			<Value>valueFromMap2</Value>
+		</Var>
+	</Entry>
+	<Entry>
+		<Var>
+			<Key>WorkerReferenceIdType</Key>
+			<Value>typeFromMap3</Value>
+		</Var>
+		<Var>
+			<Key>WorkerReferenceId</Key>
+			<Value>valueFromMap3</Value>
+		</Var>
+	</Entry>
+</Map>

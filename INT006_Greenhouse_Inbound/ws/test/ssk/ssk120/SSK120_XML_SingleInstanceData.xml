@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wd:Report_Data xmlns:wd="urn:com.workday.report/MyShoes">
+	<wd:Report_Entry>
+		<wd:Spouse>
+			<wd:ID wd:type="Employee_ID">21005</wd:ID>
+			<wd:ID wd:type="WID">1a6228638d1401a7e91052d2b14af008</wd:ID>
+		</wd:Spouse>
+		<wd:Worker>
+			<wd:ID wd:type="Employee_ID">21001</wd:ID>
+			<wd:ID wd:type="WID">19f7dabb79994d29931cd139df6272ed</wd:ID>
+		</wd:Worker>
+	</wd:Report_Entry>
+</wd:Report_Data>

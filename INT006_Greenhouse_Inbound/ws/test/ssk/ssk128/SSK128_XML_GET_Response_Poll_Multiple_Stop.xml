@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages xmlns="http://www.workday.com/wd-queue/17" returned-count="1" total-count="1">
+    <message>
+        <index>5</index>
+        <uri>/ccx/wd-queue/INT-SSK-MQ/messages/5</uri>
+        <size>1187</size>
+        <uploaded>2020-09-05T21:27:05.000Z</uploaded>
+        <content-type>text/plain</content-type>
+    </message>
+</messages>

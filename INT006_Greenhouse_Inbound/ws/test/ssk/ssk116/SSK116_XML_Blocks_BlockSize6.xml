@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Blocks>
+	<Block>
+		<rpt:Report_Entry xmlns:rpt="urn:report">
+	        <rpt:ID>21001</rpt:ID>
+	        <rpt:Full_Legal_Name>Logan McNeil</rpt:Full_Legal_Name>
+	    </rpt:Report_Entry>
+	    <rpt:Report_Entry xmlns:rpt="urn:report">
+	        <rpt:ID>21002</rpt:ID>
+	        <rpt:Full_Legal_Name>Steve Morgan</rpt:Full_Legal_Name>
+	    </rpt:Report_Entry>
+	    <rpt:Report_Entry xmlns:rpt="urn:report">
+	        <rpt:ID>21003</rpt:ID>
+	        <rpt:Full_Legal_Name>Oliver Reynolds</rpt:Full_Legal_Name>
+	    </rpt:Report_Entry>
+	    <rpt:Report_Entry xmlns:rpt="urn:report">
+	        <rpt:ID>21004</rpt:ID>
+	        <rpt:Full_Legal_Name>Maximilian Schneider</rpt:Full_Legal_Name>
+	    </rpt:Report_Entry>
+		<rpt:Report_Entry xmlns:rpt="urn:report">
+	        <rpt:ID>21005</rpt:ID>
+	        <rpt:Full_Legal_Name>Teresa Serrano</rpt:Full_Legal_Name>
+	    </rpt:Report_Entry>
+	    <rpt:Report_Entry xmlns:rpt="urn:report">
+	        <rpt:ID>21006</rpt:ID>
+	        <rpt:Full_Legal_Name>Maria Cardoza</rpt:Full_Legal_Name>
+	    </rpt:Report_Entry>
+	</Block>
+	<Block>
+	    <rpt:Report_Entry xmlns:rpt="urn:report">
+	        <rpt:ID>21007</rpt:ID>
+	        <rpt:Full_Legal_Name>Jacqueline Desjardins</rpt:Full_Legal_Name>
+	    </rpt:Report_Entry>
+	    <rpt:Report_Entry xmlns:rpt="urn:report">
+	        <rpt:ID>21008</rpt:ID>
+	        <rpt:Full_Legal_Name>Betty Liu</rpt:Full_Legal_Name>
+	    </rpt:Report_Entry>
+		<rpt:Report_Entry xmlns:rpt="urn:report">
+	        <rpt:ID>21009</rpt:ID>
+	        <rpt:Full_Legal_Name>Pedro Santiago</rpt:Full_Legal_Name>
+	    </rpt:Report_Entry>
+	    <rpt:Report_Entry xmlns:rpt="urn:report">
+	        <rpt:ID>21010</rpt:ID>
+	        <rpt:Full_Legal_Name>Lillian Chu</rpt:Full_Legal_Name>
+	    </rpt:Report_Entry>
+	    <rpt:Report_Entry xmlns:rpt="urn:report">
+	        <rpt:ID>21011</rpt:ID>
+	        <rpt:Full_Legal_Name>Isabel Arguello</rpt:Full_Legal_Name>
+	    </rpt:Report_Entry>
+	    <rpt:Report_Entry xmlns:rpt="urn:report">
+	        <rpt:ID>21012</rpt:ID>
+	        <rpt:Full_Legal_Name>Norman Chan</rpt:Full_Legal_Name>
+	    </rpt:Report_Entry>
+	</Block>
+	<Block>
+		<rpt:Report_Entry xmlns:rpt="urn:report">
+	        <rpt:ID>21013</rpt:ID>
+	        <rpt:Full_Legal_Name>David Michael Spiegel</rpt:Full_Legal_Name>
+	    </rpt:Report_Entry>
+	    <rpt:Report_Entry xmlns:rpt="urn:report">
+	        <rpt:ID>21014</rpt:ID>
+	        <rpt:Full_Legal_Name>James A. Moore Jr.</rpt:Full_Legal_Name>
+	    </rpt:Report_Entry>
+	    <rpt:Report_Entry xmlns:rpt="urn:report">
+	        <rpt:ID>21015</rpt:ID>
+	        <rpt:Full_Legal_Name>Daniel Betancourt</rpt:Full_Legal_Name>
+	    </rpt:Report_Entry>
+	    <rpt:Report_Entry xmlns:rpt="urn:report">
+	        <rpt:ID>21016</rpt:ID>
+	        <rpt:Full_Legal_Name>Chad Anderson</rpt:Full_Legal_Name>
+	    </rpt:Report_Entry>
+		<rpt:Report_Entry xmlns:rpt="urn:report">
+	        <rpt:ID>21017</rpt:ID>
+	        <rpt:Full_Legal_Name>Sara Goldstein</rpt:Full_Legal_Name>
+	    </rpt:Report_Entry>
+	    <rpt:Report_Entry xmlns:rpt="urn:report">
+	        <rpt:ID>21018</rpt:ID>
+	        <rpt:Full_Legal_Name>Jerome Williams</rpt:Full_Legal_Name>
+	    </rpt:Report_Entry>
+	</Block>
+</Blocks>

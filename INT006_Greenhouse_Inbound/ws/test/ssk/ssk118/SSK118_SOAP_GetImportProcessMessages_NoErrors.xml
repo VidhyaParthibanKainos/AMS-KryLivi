@@ -1,0 +1,19 @@
+<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+	<env:Body>
+		<wd:Get_Import_Process_Messages_Response wd:version="v32.0" xmlns:wd="urn:com.workday/bsvc">
+			<wd:Request_Criteria>
+				<wd:Import_Process_Reference wd:Descriptor="Import Eligible Earnings Override">
+					<wd:ID wd:type="WID"></wd:ID>
+					<wd:ID wd:type="Background_Process_Instance_ID"></wd:ID>
+				</wd:Import_Process_Reference>
+			</wd:Request_Criteria>
+			<wd:Response_Results>
+				<wd:Total_Results>0</wd:Total_Results>
+				<wd:Total_Pages>0</wd:Total_Pages>
+				<wd:Page_Results>0</wd:Page_Results>
+				<wd:Page>0</wd:Page>
+			</wd:Response_Results>
+			<wd:Response_Data/>
+		</wd:Get_Import_Process_Messages_Response>
+	</env:Body>
+</env:Envelope>
