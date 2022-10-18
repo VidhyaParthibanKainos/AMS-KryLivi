@@ -125,7 +125,7 @@
               </bsvc:Hire_Reason_Reference>		
 			
 			<xsl:if
-				test="$employeeType != 'Permanent'">
+				test="$employeeType != 'Regular'">
 				<bsvc:Employment_End_Date>
 					<xsl:value-of select="offer/custom_fields/end_date/value"/>
 				</bsvc:Employment_End_Date>
