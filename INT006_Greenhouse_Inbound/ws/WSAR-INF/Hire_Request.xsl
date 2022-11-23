@@ -196,14 +196,14 @@
 							<xsl:value-of select="$pay_rate_type_GH"/>
 					</bsvc:ID>
 				</bsvc:Pay_Rate_Type_Reference>
-				<!--  <xsl:if test="$isRehire = 'false'">
+				<xsl:if test="$isRehire = 'false' and $countryId = 'SWE'">
 					 <bsvc:Additional_Job_Classifications_Reference>                   
-	                     <bsvc:ID bsvc:type="Job_Classification_Group_ID">
-	                     	<xsl:value-of select="'Work_ID'"/>
+	                     <bsvc:ID bsvc:type="Job_Classification_Reference_ID">
+	                     	<xsl:value-of select="'001_-_001_(Work_ID-Sweden)'"/>
 	                     </bsvc:ID>
 	                 </bsvc:Additional_Job_Classifications_Reference>
                  </xsl:if>
-                 <xsl:if test="$department_GH = 'Clinicians'">
+                 <!-- <xsl:if test="$department_GH = 'Clinicians'">
 					 <bsvc:Additional_Job_Classifications_Reference>                   
 	                     <bsvc:ID bsvc:type="Job_Classification_Group_ID">
 	                     	<xsl:value-of select="'Speciality'"/>
