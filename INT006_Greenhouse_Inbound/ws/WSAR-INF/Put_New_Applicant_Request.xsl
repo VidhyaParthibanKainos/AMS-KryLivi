@@ -10,6 +10,7 @@
 	<xsl:param name="applicantCountryId"/>
 	<xsl:param name="sourceId"/>
 	<xsl:param name="sourceIdMapped"/>
+	<xsl:param name="phone"/>
 
 	<xsl:template match="root">
 		<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
@@ -82,7 +83,7 @@
 						</bsvc:Email_Address_Data>
 					</xsl:if>
 				</bsvc:Contact_Data>
-			</bsvc:Personal_Data>
+			</bsvc:Personal_Data>		
 			<xsl:if test="$sourceIdMapped = 'true'">
 				<bsvc:Recruiting_Data>
 					<bsvc:Applicant_Source_Reference>

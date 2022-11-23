@@ -5919,7 +5919,7 @@ props['outErrorMessage'] = (context.getErrorMessage() != empty) ? context.getErr
         </cc:local-out>
         <cc:local-out id="GetEventDocuments" routes-response-to="InitializeAttributesAndLaunchParameters" endpoint="vm://wcc/GetEventDocuments"><cc:set name="ie.event.wid" value="lp.isSet() ? lp.getIntegrationEventWID() : null"/></cc:local-out>
         <cc:local-out id="GoToProcessJobReqReport" store-message="none" routes-response-to="GoToProcessCountryReport0" endpoint="vm://INT006_Greenhouse_Inbound/INProcessJobreqReport"/>
-        <cc:async-mediation id="AsyncMediation11" routes-to="HttpOut">
+        <cc:async-mediation id="AsyncMediation11" routes-to="IsEmployee">
             <cc:steps>
                 <cc:json-to-xml id="JsonToXml" output="message" input="variable" input-variable="webhookFile"/>
                 <cc:copy id="Copy" output="variable" output-variable="var.jsonFile" input="message"/>
@@ -5956,10 +5956,23 @@ props['isRehire']='false'&#xD;
 } else{&#xD;
 	 props['HireType'] = 'New_Hire'&#xD;
 }</cc:expression>
+                    <cc:expression>props['time_type_GH']=parts[0].xpath('/root/data/payload/application/job/custom_fields/time_type/value')</cc:expression>
+                    <cc:expression>props['worker_sub_type_GH']=parts[0].xpath('/root/data/payload/application/job/custom_fields/worker_sub_type/value')</cc:expression>
+                    <cc:expression>props['pay_rate_type_GH']=parts[0].xpath('/root/data/payload/application/offer/custom_fields/pay_rate_type/value')</cc:expression>
+                    <cc:expression>props['employment_type_GH']=parts[0].xpath('/root/data/payload/application/offer/custom_fields/employment_type/value')</cc:expression>
+                    <cc:expression>props['department_GH'] = parts[0].xpath('/root/data/payload/application/job/departments/data/external_id')</cc:expression>
+                    <cc:expression>props['phoneNumber'] = parts[0].xpath('/root/data/payload/application/candidate/phone_numbers/data/value')</cc:expression>
+                    <cc:expression>props['Social_Security_Number']=parts[0].xpath('/root/data/payload/application/candidate/custom_fields/social_security_number_candidate_1653321224.5887396/value')</cc:expression>
+                    <cc:expression>props['forskrivarkod_ID']=parts[0].xpath('/root/data/payload/application/candidate/custom_fields/forskrivarkod_candidate_1661434080.8754494/value')</cc:expression>
                 </cc:eval>
                 
                 <cc:eval id="EvaluateParameters">
                     <cc:expression>props['emailPersonalType'] = 'Home'</cc:expression>
+                    <cc:expression>if (props['time_type_GH'] == 'Full Time'){&#xD;
+	props['time_type_GH']=props['time_type_GH'].toString().replace(&quot; &quot;, &quot;_&quot;)&#xD;
+} else {&#xD;
+	props['time_type_GH']=props['time_type_GH'].toString().replace(&quot; &quot;, &quot;_&quot;)&#xD;
+}</cc:expression>
                     <cc:expression>props['emailWorkType'] = 'Work' </cc:expression>
                     <cc:expression>//props['sourceId']=intsys.integrationMapReverseLookup('Source', props['hiringSource'], true).toString().replaceAll(&quot;[\\[\\]]&quot;,&quot;&quot;)</cc:expression>
                     <cc:expression>//props['sourceIdMapped'] = true</cc:expression>
@@ -6058,6 +6071,7 @@ props['isLocationChange'] = false&#xD;
                     <cc:expression>props['jobReqSalaryCompPlan'] = parts[0].xpath('/wd:Report_Entry/wd:Requisition_Salary_Plan_Assignments_group/wd:Compensation_Plan/wd:ID[@wd:type = &quot;Compensation_Plan_ID&quot;]/text()', props['namespace'])</cc:expression>
                     <cc:expression>props['jobReqHourlyFreqPlan'] = parts[0].xpath('/wd:Report_Entry/wd:Requisition_Hourly_Plan_Assignments_group/Plan_Frequency/wd:ID[@wd:type = &quot;Frequency_ID&quot;]/text()', props['namespace'])</cc:expression>
                     <cc:expression>props['jobReqHourlyCompPlan'] = parts[0].xpath('/wd:Report_Entry/wd:Requisition_Hourly_Plan_Assignments_group/wd:Compensation_Plan/wd:ID[@wd:type = &quot;Compensation_Plan_ID&quot;]/text()', props['namespace'])</cc:expression>
+                    <cc:expression>props['defaultJobTitle'] =   parts[0].xpath('/wd:Report_Entry/wd:Job_Profile_Hiring_Requirement_group/wd:Default_Job_Title', props['namespace'])</cc:expression>
                 </cc:eval>
             </cc:steps>
             <cc:send-error id="SendError" routes-to="JobReqResultsError"/>
@@ -6349,6 +6363,29 @@ props['countryName'] = 'USA'&#xD;
                 </cc:eval>
             </cc:steps>
         </cc:async-mediation>
+        <cc:route id="IsEmployee">
+            <cc:mvel-strategy>
+                <cc:choose-route expression="props['employment_type_GH'] == 'Employee'" route="Employee"/>
+                <cc:choose-route expression="props['employment_type_GH'] != 'Employee'" route="ContingentWorker"/>
+            </cc:mvel-strategy>
+            <cc:sub-route name="Employee" routes-to="HttpOut"/>
+            <cc:sub-route name="ContingentWorker" routes-to="NotEmployeeError"/>
+        </cc:route>
+        <cc:local-out id="NotEmployeeError" store-message="none" endpoint="vm://INT006_Greenhouse_Inbound/HandleError">
+            <cc:set name="inLogMessage" value="'Candidate is not an employee: ' # props['applicantID'] "/>
+            
+            <cc:set name="inLogReferenceId"/>
+            <cc:set name="inLogLevel" value="'error'"/>
+            <cc:set name="inExtraLocalIn" value="context.errorComponentId"/>
+            <cc:set name="inExtraSupportData" value="(context.getErrorMessage() != empty) ? context.getErrorMessage() : ((context.exception != null) ? context.exception.message : '')"/>
+            <cc:set name="inFinallyEndpoint"/>
+            <cc:set name="inIsAbortOnError" value="false"/>
+            <cc:set name="inIsResetError" value="false"/>
+            <cc:set name="inIncludeDebugOutput" value="false"/>
+            <cc:set name="inLogTarget" value="'primary'"/>
+            <cc:set name="inIsChildThreadContext" value="false"/>
+            <cc:set name="is.message.detail" value="context.errorMessage"/>
+        </cc:local-out>
 	</cc:assembly>
     <bean id="SSK115FileSplitter" class="com.workday.custom.int006.ssk115.ParallelBlockSplitter">
         <property name="blockSize" value="1"/>

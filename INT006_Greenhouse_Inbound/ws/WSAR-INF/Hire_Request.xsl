@@ -6,8 +6,6 @@
 
 	<xsl:param name="applicantID"/>
 	<xsl:param name="hireReason"/>
-	<xsl:param name="relocationOTPID"/>
-	<xsl:param name="signonOTPID"/>
 	<xsl:param name="fullOrPartTime"/>
 	<xsl:param name="costCenter"/>	
 	<xsl:param name="marketOrgID"/>
@@ -20,17 +18,14 @@
 	<xsl:param name="compensationGrade"/>
 	<xsl:param name="compensationPackage"/>
 	<xsl:param name="compGradeProfileId"/>
-	<xsl:param name="jobRequisitionID"/>
-	<xsl:param name="gender"/>
+	<xsl:param name="jobRequisitionID"/>	
 	<xsl:param name="isLocationChange"/>
 	<xsl:param name="scheduledWeeklyHours"/>
-	<xsl:param name="employeeType"/>
-	<xsl:param name="homeEmailPublic"/>
+	<xsl:param name="employeeType"/>	
 	<xsl:param name="jobProfileId"/>
 	<xsl:param name="jobPostingTitle"/>
 	<xsl:param name="workShift"/>	
-	<xsl:param name="supOrg"/>	
-	<xsl:param name="citizenship"/>
+	<xsl:param name="supOrg"/>
 	<xsl:param name="hireDate"/>
 	<xsl:param name="locationId"/>
 	<xsl:param name="endDate"/>
@@ -44,36 +39,48 @@
 	<xsl:param name="p.EncodedFile"/>
 	<xsl:param name="jobReqSalaryCompPlan"/>
 	<xsl:param name="jobReqHourlyCompPlan"/>
+	<xsl:param name="worker_sub_type_GH"/>
+	<xsl:param name="time_type_GH"/>
+	<xsl:param name="employment_type_GH"/>
+	<xsl:param name="isRehire"/>
+	<xsl:param name="department_GH"/>
+	<xsl:param name="defaultJobTitle"/>
+	<xsl:param name="pay_rate_type_GH"/>
+	<xsl:param name="Social_Security_Number"/>
+	<xsl:param name="forskrivarkod_ID"/>
+	<xsl:param name="countryId"/>
 	
 	
 	<xsl:template match="root">
-		<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
-			xmlns:bsvc="urn:com.workday/bsvc">
-			<soapenv:Body>
-				<bsvc:Hire_Employee_Request bsvc:version="v36.0">
-				
-				    <xsl:if test="$p.EncodedFile != ''">
-					<!--  Attach offer letter to the hire -->
-						 <bsvc:Business_Process_Parameters>			          
-				            <bsvc:Auto_Complete>1</bsvc:Auto_Complete>
-				            <bsvc:Business_Process_Attachment_Data>	
-						 		<bsvc:File_Name>
-	               					<xsl:value-of select="$attachedFileName"></xsl:value-of>
-	               				</bsvc:File_Name>	                          	
-	                           <bsvc:File>
-	                           	<xsl:value-of select="$p.EncodedFile"></xsl:value-of>
-	                           </bsvc:File>
-	                           <bsvc:Content_Type><xsl:value-of select="$p.ContentType"></xsl:value-of></bsvc:Content_Type>
-	          			  </bsvc:Business_Process_Attachment_Data>	
-				         </bsvc:Business_Process_Parameters>
-			         </xsl:if>			
-					<bsvc:Hire_Employee_Data>
-						<xsl:apply-templates select="data/payload/application"/>
-						<xsl:apply-templates select="data/payload/application/offer/custom_fields"/>
-					</bsvc:Hire_Employee_Data>
-				</bsvc:Hire_Employee_Request>
-			</soapenv:Body>
-		</soapenv:Envelope>
+		<xsl:if test="$employment_type_GH = 'Employee'">
+			<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+				xmlns:bsvc="urn:com.workday/bsvc">
+				<soapenv:Body>
+					<bsvc:Hire_Employee_Request bsvc:version="v38.0">
+					
+					    <xsl:if test="$p.EncodedFile != ''">
+						<!--  Attach offer letter to the hire -->
+							 <bsvc:Business_Process_Parameters>			          
+					            <bsvc:Auto_Complete>1</bsvc:Auto_Complete>
+					            <bsvc:Business_Process_Attachment_Data>	
+							 		<bsvc:File_Name>
+		               					<xsl:value-of select="$attachedFileName"></xsl:value-of>
+		               				</bsvc:File_Name>	                          	
+		                           <bsvc:File>
+		                           	<xsl:value-of select="$p.EncodedFile"></xsl:value-of>
+		                           </bsvc:File>
+		                           <bsvc:Content_Type><xsl:value-of select="$p.ContentType"></xsl:value-of></bsvc:Content_Type>
+		          			  </bsvc:Business_Process_Attachment_Data>	
+					         </bsvc:Business_Process_Parameters>
+				         </xsl:if>			
+						<bsvc:Hire_Employee_Data>
+							<xsl:apply-templates select="data/payload/application"/>
+							<xsl:apply-templates select="data/payload/application/offer/custom_fields"/>
+						</bsvc:Hire_Employee_Data>
+					</bsvc:Hire_Employee_Request>
+				</soapenv:Body>
+			</soapenv:Envelope>
+		</xsl:if>
 	</xsl:template>
 
 	<xsl:template match="data/payload/application">
@@ -102,6 +109,8 @@
 				<xsl:value-of select="$jobRequisitionID"/>
 			</bsvc:ID>
 		</bsvc:Job_Requisition_Reference> -->
+		
+		
 		<bsvc:Hire_Date>
 			<xsl:choose>
 				<xsl:when test="offer/starts_at &lt; $hireDate">
@@ -115,7 +124,7 @@
 		<bsvc:Hire_Employee_Event_Data>
 			<bsvc:Employee_Type_Reference>
 				<bsvc:ID bsvc:type="Employee_Type_ID">
-					<xsl:value-of select="$employeeType"/>
+					<xsl:value-of select="$worker_sub_type_GH"/>
 				</bsvc:ID>
 			</bsvc:Employee_Type_Reference>
 			<bsvc:Hire_Reason_Reference>                 
@@ -125,7 +134,7 @@
               </bsvc:Hire_Reason_Reference>		
 			
 			<xsl:if
-				test="$employeeType != 'Regular'">
+				test="$worker_sub_type_GH != 'Regular'">
 				<bsvc:Employment_End_Date>
 					<xsl:value-of select="offer/custom_fields/end_date/value"/>
 				</bsvc:Employment_End_Date>
@@ -138,8 +147,11 @@
 					</bsvc:ID>
 				</bsvc:Job_Profile_Reference>
 				<bsvc:Position_Title>
-					<xsl:value-of select="$jobPostingTitle"/>
+					<xsl:value-of select="$defaultJobTitle"/>
 				</bsvc:Position_Title>
+				<bsvc:Business_Title>
+						<xsl:value-of select="$defaultJobTitle"/>
+				</bsvc:Business_Title>				
 				<bsvc:Location_Reference>
 					<bsvc:ID bsvc:type="Location_ID">
 						<xsl:value-of select="$locationId"/>
@@ -147,11 +159,11 @@
 				</bsvc:Location_Reference>
 				<bsvc:Position_Time_Type_Reference>
 					<bsvc:ID bsvc:type="Position_Time_Type_ID">
-						<xsl:value-of select="$fullOrPartTime"/>
+						<xsl:value-of select="$time_type_GH"/>
 					</bsvc:ID>
 				</bsvc:Position_Time_Type_Reference>
 				<xsl:choose>
-					<xsl:when test="$isLocationChange = 'true' and $fullOrPartTime = 'Full_time'">
+					<xsl:when test="$isLocationChange = 'true' and $time_type_GH = 'Full_time'">
 						<bsvc:Scheduled_Hours>
 							<xsl:value-of select="$scheduledWeeklyHours"/>
 						</bsvc:Scheduled_Hours>
@@ -165,7 +177,8 @@
 					
 				<bsvc:Pay_Rate_Type_Reference>
 					<bsvc:ID bsvc:type="Pay_Rate_Type_ID">
-						<xsl:choose>
+					<!--  Case:CS0038060 Mapping to value in GH instead of getting it from JobReq -->
+						<!-- <xsl:choose>
 							<xsl:when test="$jobReqSalaryCompPlan != '' or $jobReqHourlyCompPlan != ''">
 							    <xsl:choose>
 							        <xsl:when test="$jobReqSalaryCompPlan != ''">
@@ -179,10 +192,24 @@
 							<xsl:otherwise>
 								<xsl:value-of select="'Hourly'"/>
 							</xsl:otherwise>
-						</xsl:choose>
+						</xsl:choose> -->
+							<xsl:value-of select="$pay_rate_type_GH"/>
 					</bsvc:ID>
 				</bsvc:Pay_Rate_Type_Reference>
-							
+				<!--  <xsl:if test="$isRehire = 'false'">
+					 <bsvc:Additional_Job_Classifications_Reference>                   
+	                     <bsvc:ID bsvc:type="Job_Classification_Group_ID">
+	                     	<xsl:value-of select="'Work_ID'"/>
+	                     </bsvc:ID>
+	                 </bsvc:Additional_Job_Classifications_Reference>
+                 </xsl:if>
+                 <xsl:if test="$department_GH = 'Clinicians'">
+					 <bsvc:Additional_Job_Classifications_Reference>                   
+	                     <bsvc:ID bsvc:type="Job_Classification_Group_ID">
+	                     	<xsl:value-of select="'Speciality'"/>
+	                     </bsvc:ID>
+	                 </bsvc:Additional_Job_Classifications_Reference>
+                 </xsl:if> -->                  								
 			</bsvc:Position_Details>
 		</bsvc:Hire_Employee_Event_Data>
 	</xsl:template>
@@ -328,6 +355,44 @@
 			    </xsl:if>
 			</bsvc:Position_Organization_Assignments_Data>
 		</bsvc:Edit_Assign_Organization_Sub_Process>
-	
+		
+		  <!--  CaseCS0038060 Identifiers--> 
+	 <bsvc:Edit_Government_IDs_Sub_Process>
+	    
+	        <bsvc:Business_Sub_Process_Parameters>	           
+	            <bsvc:Auto_Complete>true</bsvc:Auto_Complete>	            
+	        </bsvc:Business_Sub_Process_Parameters>
+	    
+	        <bsvc:Government_Identification_Data>	          
+	           <!-- <bsvc:National_ID>	               
+	                <bsvc:National_ID_Reference bsvc:Descriptor="?">	                 
+	                    <bsvc:ID bsvc:type="?">?</bsvc:ID>
+	                </bsvc:National_ID_Reference>	               
+	                <bsvc:National_ID_Data>	                    
+	                    <bsvc:ID>?</bsvc:ID>	                 
+	                    <bsvc:ID_Type_Reference bsvc:Descriptor="?">	                     
+	                        <bsvc:ID bsvc:type="?">?</bsvc:ID>
+	                    </bsvc:ID_Type_Reference>	                  
+	                </bsvc:National_ID_Data>	
+	            </bsvc:National_ID>-->	
+	            <xsl:if test="$countryId = 'SWE'">      
+		            <bsvc:Government_ID>
+		                <bsvc:Government_ID_Data>	                  
+		                  <bsvc:ID>
+	                           	<xsl:value-of select="$forskrivarkod_ID"/>
+	                     </bsvc:ID>                        
+	                      <bsvc:ID_Type_Reference>                           
+	                         <bsvc:ID bsvc:type="Government_ID_Type_ID">SWE_Förskrivarkod</bsvc:ID>
+	                      </bsvc:ID_Type_Reference>   
+	                        <bsvc:Country_Reference>                          
+		                        <bsvc:ID bsvc:type="ISO_3166-1_Alpha-3_Code">
+		                            <xsl:value-of select="$countryId"/>
+		                        </bsvc:ID>
+		                    </bsvc:Country_Reference> 
+		                </bsvc:Government_ID_Data>	              
+		            </bsvc:Government_ID>
+	            </xsl:if>
+	        </bsvc:Government_Identification_Data>
+	    </bsvc:Edit_Government_IDs_Sub_Process>
 	</xsl:template>
 </xsl:stylesheet>
