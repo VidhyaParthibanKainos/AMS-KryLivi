@@ -357,42 +357,46 @@
 		</bsvc:Edit_Assign_Organization_Sub_Process>
 		
 		  <!--  CaseCS0038060 Identifiers--> 
-	 <bsvc:Edit_Government_IDs_Sub_Process>
-	    
-	        <bsvc:Business_Sub_Process_Parameters>	           
-	            <bsvc:Auto_Complete>true</bsvc:Auto_Complete>	            
-	        </bsvc:Business_Sub_Process_Parameters>
-	    
-	        <bsvc:Government_Identification_Data>	          
-	           <!-- <bsvc:National_ID>	               
-	                <bsvc:National_ID_Reference bsvc:Descriptor="?">	                 
-	                    <bsvc:ID bsvc:type="?">?</bsvc:ID>
-	                </bsvc:National_ID_Reference>	               
-	                <bsvc:National_ID_Data>	                    
-	                    <bsvc:ID>?</bsvc:ID>	                 
-	                    <bsvc:ID_Type_Reference bsvc:Descriptor="?">	                     
-	                        <bsvc:ID bsvc:type="?">?</bsvc:ID>
-	                    </bsvc:ID_Type_Reference>	                  
-	                </bsvc:National_ID_Data>	
-	            </bsvc:National_ID>-->	
-	            <xsl:if test="$countryId = 'SWE'">      
-		            <bsvc:Government_ID>
-		                <bsvc:Government_ID_Data>	                  
-		                  <bsvc:ID>
-	                           	<xsl:value-of select="$forskrivarkod_ID"/>
-	                     </bsvc:ID>                        
-	                      <bsvc:ID_Type_Reference>                           
-	                         <bsvc:ID bsvc:type="Government_ID_Type_ID">SWE_Förskrivarkod</bsvc:ID>
-	                      </bsvc:ID_Type_Reference>   
-	                        <bsvc:Country_Reference>                          
-		                        <bsvc:ID bsvc:type="ISO_3166-1_Alpha-3_Code">
-		                            <xsl:value-of select="$countryId"/>
-		                        </bsvc:ID>
-		                    </bsvc:Country_Reference> 
-		                </bsvc:Government_ID_Data>	              
-		            </bsvc:Government_ID>
-	            </xsl:if>
-	        </bsvc:Government_Identification_Data>
-	    </bsvc:Edit_Government_IDs_Sub_Process>
+	     <xsl:if test="$countryId = 'SWE'"> 
+			 <bsvc:Edit_Government_IDs_Sub_Process>				    
+		        <bsvc:Business_Sub_Process_Parameters>	           
+		            <bsvc:Auto_Complete>true</bsvc:Auto_Complete>	            
+		        </bsvc:Business_Sub_Process_Parameters>
+		    
+		        <bsvc:Government_Identification_Data>	          
+		           <bsvc:National_ID>
+		                <bsvc:National_ID_Data>	                    
+		                    <bsvc:ID>
+		                    	<xsl:value-of select="$Social_Security_Number"/>
+		                    </bsvc:ID>	                 
+		                    <bsvc:ID_Type_Reference>	                     
+		                        <bsvc:ID bsvc:type="National_ID_Type_Code">SWE-PN</bsvc:ID>
+		                    </bsvc:ID_Type_Reference>
+		                    <bsvc:Country_Reference>                          
+			                        <bsvc:ID bsvc:type="ISO_3166-1_Alpha-3_Code">
+			                            <xsl:value-of select="$countryId"/>
+			                        </bsvc:ID>
+			                 </bsvc:Country_Reference> 	                  
+		                </bsvc:National_ID_Data>	
+		            </bsvc:National_ID>	
+		              
+			            <bsvc:Government_ID>
+			                <bsvc:Government_ID_Data>	                  
+			                  <bsvc:ID>
+		                           	<xsl:value-of select="$forskrivarkod_ID"/>
+		                     </bsvc:ID>                        
+		                      <bsvc:ID_Type_Reference>                           
+		                         <bsvc:ID bsvc:type="Government_ID_Type_ID">SWE_Förskrivarkod</bsvc:ID>
+		                      </bsvc:ID_Type_Reference>   
+		                        <bsvc:Country_Reference>                          
+			                        <bsvc:ID bsvc:type="ISO_3166-1_Alpha-3_Code">
+			                            <xsl:value-of select="$countryId"/>
+			                        </bsvc:ID>
+			                    </bsvc:Country_Reference> 
+			                </bsvc:Government_ID_Data>	              
+			            </bsvc:Government_ID>	            
+		        	</bsvc:Government_Identification_Data>
+			    </bsvc:Edit_Government_IDs_Sub_Process>
+    	</xsl:if>
 	</xsl:template>
 </xsl:stylesheet>
